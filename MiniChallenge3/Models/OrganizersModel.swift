@@ -21,12 +21,15 @@ struct Organizer {
     
 }
 
-//struct FeedBack {
-//    var rate : String
-//    var review : String
-//    var date : String
-//
-//}
+struct FeedBack {
+    var rate : Double
+    var review : String
+    var date : String
+
+}
+    
+    var coustemrfeedback : [FeedBack] = [ FeedBack(rate: 4.3, review: "AAAA", date: "20 APR") , FeedBack(rate: 4.0 , review: "AAA", date: "16 APR") , FeedBack(rate: 3.6, review: "AAA", date: "07 APR")
+    ]
 
 var organizerInfo : [Organizer] = [
     Organizer(img: UIImage(named: "store1"), name: "GHADEER ASHOOR", rate: "4.2", overView: "Modern Events & Wedding Designer. ", isSaved: true, isIncludePackage: true),

@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ServicesVC" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="1320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1230"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mic-qV-IGq">
@@ -178,7 +178,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="390" height="1320"/>
+                    <size key="freeformSize" width="390" height="1230"/>
                     <connections>
                         <outlet property="adsCollection" destination="wJ8-l6-QiE" id="o4X-k3-R3i"/>
                         <outlet property="packagesCollection" destination="3t2-1e-a8g" id="yO6-fn-j9r"/>
@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807.6923076923076" y="248.81516587677723"/>
+            <point key="canvasLocation" x="1807.6923076923076" y="216.82464454976304"/>
         </scene>
         <!--Services-->
         <scene sceneID="zYe-1R-r7c">
