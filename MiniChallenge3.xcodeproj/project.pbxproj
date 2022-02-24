@@ -29,8 +29,10 @@
 		3213E90027C3C30A00270EAD /* Saved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E8FF27C3C30A00270EAD /* Saved.storyboard */; };
 		3213E90327C3C33F00270EAD /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E90127C3C33F00270EAD /* Profile.storyboard */; };
 		323C46F127C4109900570619 /* AdsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46F027C4109900570619 /* AdsCollectionViewCell.swift */; };
+		32E5A8E927C62922006D9CE8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E5A8E827C62922006D9CE8 /* View.xib */; };
 		32E957D327C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */; };
 		32E957D527C57B9600DD4CD6 /* PackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */; };
+		32EFD16F27C64F2700262F00 /* OrganizersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD16E27C64F2700262F00 /* OrganizersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +60,10 @@
 		3213E8FF27C3C30A00270EAD /* Saved.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Saved.storyboard; sourceTree = "<group>"; };
 		3213E90227C3C33F00270EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiniChallenge3/Storyboards/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		323C46F027C4109900570619 /* AdsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCollectionViewCell.swift; sourceTree = "<group>"; };
+		32E5A8E827C62922006D9CE8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCollectionViewCell.swift; sourceTree = "<group>"; };
+		32EFD16E27C64F2700262F00 /* OrganizersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			children = (
 				3213E8C827C3BDA300270EAD /* SceneDelegate.swift */,
 				3213E8C627C3BDA300270EAD /* AppDelegate.swift */,
+				32EFD17027C64F2F00262F00 /* Models */,
 				323C46EF27C40ECE00570619 /* Cells */,
 				3213E8DB27C3BDC500270EAD /* Storyboards */,
 				3213E8DA27C3BDAD00270EAD /* ViewControllers */,
@@ -141,8 +146,17 @@
 				323C46F027C4109900570619 /* AdsCollectionViewCell.swift */,
 				32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */,
 				32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */,
+				32E5A8E827C62922006D9CE8 /* View.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		32EFD17027C64F2F00262F00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32EFD16E27C64F2700262F00 /* OrganizersModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +221,7 @@
 				3213E90327C3C33F00270EAD /* Profile.storyboard in Resources */,
 				3213E8E527C3BEDC00270EAD /* ServiceProviders.storyboard in Resources */,
 				3213E8D027C3BDA400270EAD /* Assets.xcassets in Resources */,
+				32E5A8E927C62922006D9CE8 /* View.xib in Resources */,
 				3213E8FB27C3C1B900270EAD /* Services.storyboard in Resources */,
 				3213E90027C3C30A00270EAD /* Saved.storyboard in Resources */,
 				3213E8DF27C3BE9100270EAD /* OrganizerInfo.storyboard in Resources */,
@@ -233,6 +248,7 @@
 				3213E8F727C3C03700270EAD /* ProfileVC.swift in Sources */,
 				3213E8CB27C3BDA300270EAD /* ServicesVC.swift in Sources */,
 				3213E8C727C3BDA300270EAD /* AppDelegate.swift in Sources */,
+				32EFD16F27C64F2700262F00 /* OrganizersModel.swift in Sources */,
 				3213E8ED27C3BF6400270EAD /* PackageDetailsVC.swift in Sources */,
 				323C46F127C4109900570619 /* AdsCollectionViewCell.swift in Sources */,
 				3213E8C927C3BDA300270EAD /* SceneDelegate.swift in Sources */,

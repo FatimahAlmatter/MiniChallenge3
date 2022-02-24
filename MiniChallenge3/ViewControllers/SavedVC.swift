@@ -8,22 +8,59 @@
 import UIKit
 
 class SavedVC: UIViewController {
-
+    var organizer = OrganizersModel()
+    
+    @IBOutlet weak var savedCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        savedCollectionView.delegate = self
+        savedCollectionView.dataSource = self
+        
+        let nib = UINib(nibName: "View", bundle: nil)
+        savedCollectionView.register(nib, forCellWithReuseIdentifier: "packageCell")
+        organizer.filterSavedItems()
 
-        // Do any additional setup after loading the view.
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return organizer.filterData.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
+        cell3.layer.cornerRadius = 12
+        cell3.storeImg.image = organizer.filterData[indexPath.row].img
+        cell3.storeName.text = organizer.filterData[indexPath.row].name
+        cell3.storeRate.text = organizer.filterData[indexPath.row].rate
+        cell3.storeOverview.text = organizer.filterData[indexPath.row].overView
+        
+        if organizer.filterData[indexPath.row].isSaved == true {
+            cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        } else {
+            cell3.SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        }
+        
+        if organizer.filterData[indexPath.row].isIncludePackage == true {
+            cell3.includePackageTag.isHidden = false
+        } else {
+            cell3.includePackageTag.isHidden = true
+        }
+        
+        
+        return cell3
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        
+    }
+    
+    
+    
 }

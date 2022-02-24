@@ -8,22 +8,28 @@
 import UIKit
 
 class ServicesVC: UIViewController {
+    var organizer = OrganizersModel()
     
     @IBOutlet weak var adsCollection: UICollectionView!
     @IBOutlet weak var pageControlOutlet: UIPageControl!
-    @IBOutlet weak var searchOutlet: UISearchBar!
     @IBOutlet weak var servicesCollection: UICollectionView!
     @IBOutlet weak var packagesCollection: UICollectionView!
     
+    let search = UISearchController()
     
-    var adsArray = [UIImage(named: "ad1") , UIImage(named: "ad2")]
+    var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]
     var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Wedding"), UIImage(named: "Security")]
     var services = ["Catering","Decorations","Gifts","Technical & DJ","invitation","Wedding", "Security"]
     var timer: Timer?
     var currentIndex = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      //  search.searchResultsUpdater = self
+        navigationItem.searchController = search
+        
         adsCollection.delegate = self
         adsCollection.dataSource = self
         adsCollection.layer.cornerRadius = 20
@@ -35,8 +41,11 @@ class ServicesVC: UIViewController {
         
         packagesCollection.delegate = self
         packagesCollection.dataSource = self
-        packagesCollection.layer.cornerRadius = 20
-
+        
+        let nib = UINib(nibName: "View", bundle: nil)
+        packagesCollection.register(nib, forCellWithReuseIdentifier: "packageCell")
+        
+        
         
     }
     
@@ -55,16 +64,27 @@ class ServicesVC: UIViewController {
         pageControlOutlet.currentPage = currentIndex
         
     }
+    
+//    func updateSearchResults(for searchController: UISearchController) {
+//        guard let text = search.searchBar.text else {
+//            return
+//        }
+//        search.searchResultsController
+//    }
 }
 
+
+
+
 extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.adsCollection {
             return adsArray.count
         } else if collectionView == self.servicesCollection {
             return servicesArray.count
         } else {
-            return 1
+            return organizer.organizerInfo.count
         }
         
     }
@@ -81,6 +101,26 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             return cell2
         } else {
             let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
+            
+            cell3.layer.cornerRadius = 12
+            cell3.storeImg.image = organizer.organizerInfo[indexPath.row].img
+            cell3.storeName.text = organizer.organizerInfo[indexPath.row].name
+            cell3.storeRate.text = organizer.organizerInfo[indexPath.row].rate
+            cell3.storeOverview.text = organizer.organizerInfo[indexPath.row].overView
+            
+            if organizer.organizerInfo[indexPath.row].isSaved == true {
+                cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            } else {
+                cell3.SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
+                
+            }
+            
+            if organizer.organizerInfo[indexPath.row].isIncludePackage == true {
+                cell3.includePackageTag.isHidden = false
+            } else {
+                cell3.includePackageTag.isHidden = true
+            }
+            
             return cell3
             
         }
@@ -94,7 +134,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             
         } else if collectionView == self.servicesCollection {
             return CGSize(width: 170, height: collectionView.frame.height)
-
+            
         } else {
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
             
@@ -102,11 +142,19 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        if collectionView == self.packagesCollection {
+            return 20
+        } else {
+            return 1
+            
+            
+        }
+        
         
     }
     
 }
+
 
 
 

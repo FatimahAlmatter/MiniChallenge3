@@ -9,13 +9,13 @@ import UIKit
 
 class PackageCollectionViewCell: UICollectionViewCell {
     
+    
     @IBOutlet weak var storeImg: UIImageView!
     @IBOutlet weak var storeName: UILabel!
     @IBOutlet weak var storeRate: UILabel!
     @IBOutlet weak var storeOverview: UILabel!
-    @IBOutlet weak var savedIcon: UIButton!
+    @IBOutlet weak var SavedAction: UIButton!
+    @IBOutlet weak var includePackageTag: UILabel!
     
-    
-    
-    
+        
 }
