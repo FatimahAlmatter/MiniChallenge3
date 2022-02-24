@@ -7,12 +7,25 @@
 
 import UIKit
 
-class ServiceProvidersVC: UIViewController {
+class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource {
+   
+    
 
+   
+    @IBOutlet weak var collectionv: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        collectionv.delegate = self
+        collectionv.dataSource = self
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
     
 
