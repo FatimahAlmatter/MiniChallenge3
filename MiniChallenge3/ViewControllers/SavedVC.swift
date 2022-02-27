@@ -37,7 +37,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         cell3.storeImg.image = organizer.filterData[indexPath.row].img
         cell3.storeName.text = organizer.filterData[indexPath.row].name
         cell3.storeRate.text = organizer.filterData[indexPath.row].rate
-        cell3.storeOverview.text = organizer.filterData[indexPath.row].overView
+        cell3.storeOverview.text = "Overview: \(organizer.filterData[indexPath.row].overView)"
         
         if organizer.filterData[indexPath.row].isSaved == true {
             cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
@@ -57,7 +57,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width, height: 170)
         
     }
     
