@@ -8,18 +8,21 @@
 import UIKit
 
 class RequestDetailsVC: UIViewController {
-
+    
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var menu: UITextField!
     
     @IBOutlet weak var labeln: UILabel!
-   
-     @IBAction func Steppr(_ sender: UIStepper)
-    {
-      //  labeln.text = String(sender.value)
-        
-        
-    }
+    
+    
+    
+    
+    //     @IBAction func Steppr(_ sender: UIStepper)
+    //    {
+    //      labeln.text = String(sender.value)
+    //
+    //
+    //    }
     @IBOutlet weak var note: UITextView!
     let menu1 = ["wedding", "birthday", "Graduation", "Anniversary", "bridal-shower", "engagement", "Baby-shower", "Retirement"]
     
@@ -32,16 +35,20 @@ class RequestDetailsVC: UIViewController {
         pickerView.dataSource = self
         
         menu.inputView = pickerView
-
         
+        
+    }
+    
+    @IBAction func stepBtn(_ sender: UIStepper) {
+        labeln.text = String(sender.value)
+        print(sender.value)
+        
+
     }
     
     
     
     
-
-   
-
 }
 
 
