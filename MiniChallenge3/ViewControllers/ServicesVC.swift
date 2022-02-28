@@ -215,7 +215,3 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     
     
 }
-
-
-
-
