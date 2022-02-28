@@ -171,9 +171,9 @@
 				32EA1BA727CAB92B00A91861 /* NotificationCell.swift */,
 				1606160B27CB6C1000CC8717 /* RCollectionViewCell.swift */,
 				1606160F27CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift */,
-				32E5A8E827C62922006D9CE8 /* View.xib */,
 				32F8BACB27CCCEDD00F2D7D6 /* orgpackingCollectionViewCell.swift */,
 				32F8BACD27CCCF4E00F2D7D6 /* feedbackCollectionViewCell.swift */,
+				32E5A8E827C62922006D9CE8 /* View.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

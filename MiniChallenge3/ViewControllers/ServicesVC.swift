@@ -151,8 +151,10 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             cell3.storeOverview.text = "Overview: \(organizer.organizerInfo[indexPath.row].overView)"
             
             if organizer.organizerInfo[indexPath.row].isSaved == true {
+                cell3.SavedAction.tag = 1
                 cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
             } else {
+                cell3.SavedAction.tag = 0
                 cell3.SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
                 
             }
@@ -162,6 +164,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             } else {
                 cell3.includePackageTag.isHidden = true
             }
+
             
             return cell3
             
