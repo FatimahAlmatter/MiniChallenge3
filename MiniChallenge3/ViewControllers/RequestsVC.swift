@@ -31,6 +31,7 @@ class RequestsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! RCollectionViewCell
+        
         cell.layer.cornerRadius = 20
         
         cell.StoreName.text = model.requests[indexPath.row].organizerName
