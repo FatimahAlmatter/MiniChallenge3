@@ -28,13 +28,13 @@ class PackageCollectionViewCell: UICollectionViewCell {
         
     @IBAction func savedBtnPressed(_ sender: UIButton) {
         //if empty
-        if SavedAction.tag == 0 {
+        if SavedAction.tag == 1 {
             SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
-            SavedAction.tag = 1
+            SavedAction.tag = 0
         
         } else {
             SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
-            SavedAction.tag = 0
+            SavedAction.tag = 1
             
         }
     }
