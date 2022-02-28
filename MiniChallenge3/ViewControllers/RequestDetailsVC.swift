@@ -40,10 +40,9 @@ class RequestDetailsVC: UIViewController {
     }
     
     @IBAction func stepBtn(_ sender: UIStepper) {
-        labeln.text = String(sender.value)
+        labeln.text = String(Int(sender.value))
         print(sender.value)
         
-
     }
     
     
