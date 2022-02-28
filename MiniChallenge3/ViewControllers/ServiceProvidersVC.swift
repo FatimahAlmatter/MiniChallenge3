@@ -7,36 +7,58 @@
 
 import UIKit
 
-class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource {
-   
+class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout {
+    var vc = OrganizersModel()
     
-
-   
+    
+    
     @IBOutlet weak var collectionv: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         collectionv.delegate = self
         collectionv.dataSource = self
         
+        let nib = UINib(nibName: "View", bundle: nil)
+        collectionv.register(nib, forCellWithReuseIdentifier: "packageCell")
+        
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return vc.organizerInfo.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
+        cell3.layer.cornerRadius = 12
+        cell3.storeImg.image = vc.organizerInfo[indexPath.row].img
+        cell3.storeName.text = vc.organizerInfo[indexPath.row].name
+        cell3.storeRate.text = vc.organizerInfo[indexPath.row].rate
+        cell3.storeOverview.text = vc.organizerInfo[indexPath.row].overView
+        
+        if vc.organizerInfo[indexPath.row].isSaved == true {
+            cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+        } else {
+            cell3.SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            
+        }
+        
+        if vc.organizerInfo[indexPath.row].isIncludePackage == true {
+            cell3.includePackageTag.isHidden = false
+        } else {
+            cell3.includePackageTag.isHidden = true
+        }
+        
+        return cell3
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 161)
+        
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+        
+        
+    }
 }
