@@ -22,7 +22,7 @@ class OrganizersModel {
     }
     
     struct FeedBack {
-        var rate : Double
+        var rate : String
         var review : String
         var date : String
         
@@ -37,7 +37,7 @@ class OrganizersModel {
     
     var requests : [Request] = [Request(organizerName: "GHADEER ASHOOR", partyDate: "02/03/2022", partyType: "BirthDay")]
     
-    var coustemrfeedback : [FeedBack] = [ FeedBack(rate: 4.3, review: "AAAA", date: "20 APR") , FeedBack(rate: 4.0 , review: "AAA", date: "16 APR") , FeedBack(rate: 3.6, review: "AAA", date: "07 APR")
+    var coustemrfeedback : [FeedBack] = [ FeedBack(rate: "4.3", review: "AAAA", date: "20 APR") , FeedBack(rate: "4.0" , review: "AAA", date: "16 APR") , FeedBack(rate: "3.6", review: "AAA", date: "07 APR")
     ]
     
     var organizerInfo : [Organizer] = [

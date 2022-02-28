@@ -11,18 +11,10 @@ class RequestDetailsVC: UIViewController {
     
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var menu: UITextField!
-    
     @IBOutlet weak var labeln: UILabel!
     
     
     
-    
-    //     @IBAction func Steppr(_ sender: UIStepper)
-    //    {
-    //      labeln.text = String(sender.value)
-    //
-    //
-    //    }
     @IBOutlet weak var note: UITextView!
     let menu1 = ["wedding", "birthday", "Graduation", "Anniversary", "bridal-shower", "engagement", "Baby-shower", "Retirement"]
     
@@ -30,6 +22,7 @@ class RequestDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "New Request"
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -44,9 +37,6 @@ class RequestDetailsVC: UIViewController {
         print(sender.value)
         
     }
-    
-    
-    
     
 }
 

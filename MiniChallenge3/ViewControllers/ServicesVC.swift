@@ -64,33 +64,31 @@ class ServicesVC: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "serviceProvidersScreen" {
+            let VC = segue.destination as? ServiceProvidersVC
+            VC?.title = "Catering"
+            VC?.navigationItem.largeTitleDisplayMode = .never
+
+
+            
+        } else if segue.identifier == "goToOrganizerScreen" {
+            let VC = segue.destination as? OrganizerInfoVC
+            VC?.title = "Organizer Info"
+            VC?.navigationItem.largeTitleDisplayMode = .never
+
+        }
+    }
+    
     @IBAction func notificationPressed(_ sender: Any) {
         performSegue(withIdentifier: "notificationScreen", sender: nil)
-
+        
     }
     @IBAction func filterButton(_ sender: Any) {
     }
     
     
     
-    //    override func viewDidLayoutSubviews() {
-    //        super.viewDidLayoutSubviews()
-    //        let scrollview = UIScrollView(frame: CGRect(x: 10, y: 10, width: view.frame.size.width , height: view.frame.size.height))
-    //        scrollview.backgroundColor = .red
-    //        view.addSubview(scrollview)
-    //
-    //        scrollview.addSubview(adsCollection)
-    //        scrollview.addSubview(serviceLabel)
-    //        scrollview.addSubview(pageControlOutlet)
-    //        scrollview.addSubview(servicesCollection)
-    //        scrollview.addSubview(lineView)
-    //        scrollview.addSubview(packageLabel)
-    //        scrollview.addSubview(filtersBtnsCollection)
-    //        scrollview.addSubview(packagesCollection)
-    //
-    //        scrollview.contentSize = CGSize(width: view.frame.size.width, height: 2200)
-    //
-    //    }
     
     
     func startTimer(){
@@ -183,9 +181,19 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let servce = servicesArray[indexPath.row]
-        
-        print("index path \(indexPath.row)")
+        if collectionView == self.servicesCollection {
+            if indexPath.row == 0 {
+                performSegue(withIdentifier: "serviceProvidersScreen", sender: self)
+            }
+            
+        } else if collectionView == self.packagesCollection {
+            if indexPath.row == 0 {
+                performSegue(withIdentifier: "goToOrganizerScreen", sender: self)
+            }
+            
+        } else {
+            print("nothing")
+        }
     }
     
     

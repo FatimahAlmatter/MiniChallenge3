@@ -23,6 +23,11 @@ class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollec
         collectionv.register(nib, forCellWithReuseIdentifier: "packageCell")
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "requestScreen", sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return vc.organizerInfo.count
     }
