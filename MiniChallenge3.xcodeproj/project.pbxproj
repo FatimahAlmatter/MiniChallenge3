@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1606160C27CB6C1000CC8717 /* RCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606160B27CB6C1000CC8717 /* RCollectionViewCell.swift */; };
+		1606161027CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606160F27CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift */; };
+		32026C6B27C7AF9900D96693 /* ButtonsFilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32026C6A27C7AF9900D96693 /* ButtonsFilterCollectionViewCell.swift */; };
 		3213E8C727C3BDA300270EAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8C627C3BDA300270EAD /* AppDelegate.swift */; };
 		3213E8C927C3BDA300270EAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8C827C3BDA300270EAD /* SceneDelegate.swift */; };
 		3213E8CB27C3BDA300270EAD /* ServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8CA27C3BDA300270EAD /* ServicesVC.swift */; };
@@ -32,10 +35,17 @@
 		32E5A8E927C62922006D9CE8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E5A8E827C62922006D9CE8 /* View.xib */; };
 		32E957D327C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */; };
 		32E957D527C57B9600DD4CD6 /* PackageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */; };
+		32EA1BA427CAB51000A91861 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EA1BA327CAB51000A91861 /* Notifications.storyboard */; };
+		32EA1BA627CAB6C200A91861 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA1BA527CAB6C200A91861 /* NotificationsVC.swift */; };
+		32EA1BA827CAB92B00A91861 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EA1BA727CAB92B00A91861 /* NotificationCell.swift */; };
 		32EFD16F27C64F2700262F00 /* OrganizersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD16E27C64F2700262F00 /* OrganizersModel.swift */; };
+		9CCD992527C77E2400806DBF /* CatagoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCD992427C77E2400806DBF /* CatagoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1606160B27CB6C1000CC8717 /* RCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCollectionViewCell.swift; sourceTree = "<group>"; };
+		1606160F27CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		32026C6A27C7AF9900D96693 /* ButtonsFilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsFilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		3213E8C327C3BDA300270EAD /* MiniChallenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3213E8C627C3BDA300270EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3213E8C827C3BDA300270EAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +73,11 @@
 		32E5A8E827C62922006D9CE8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCollectionViewCell.swift; sourceTree = "<group>"; };
+		32EA1BA327CAB51000A91861 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		32EA1BA527CAB6C200A91861 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		32EA1BA727CAB92B00A91861 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		32EFD16E27C64F2700262F00 /* OrganizersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizersModel.swift; sourceTree = "<group>"; };
+		9CCD992427C77E2400806DBF /* CatagoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 				3213E8F427C3C02500270EAD /* RequestDetailsVC.swift */,
 				3213E8F627C3C03700270EAD /* ProfileVC.swift */,
 				3213E8F827C3C06D00270EAD /* SavedVC.swift */,
+				32EA1BA527CAB6C200A91861 /* NotificationsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +151,7 @@
 				3213E8E027C3BEAE00270EAD /* PackageDetails.storyboard */,
 				3213E8E427C3BEDC00270EAD /* ServiceProviders.storyboard */,
 				3213E8E627C3BEF700270EAD /* RequestDetails.storyboard */,
+				32EA1BA327CAB51000A91861 /* Notifications.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -146,7 +162,12 @@
 				323C46F027C4109900570619 /* AdsCollectionViewCell.swift */,
 				32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */,
 				32E957D427C57B9600DD4CD6 /* PackageCollectionViewCell.swift */,
+				9CCD992427C77E2400806DBF /* CatagoryCollectionViewCell.swift */,
+				32026C6A27C7AF9900D96693 /* ButtonsFilterCollectionViewCell.swift */,
+				32EA1BA727CAB92B00A91861 /* NotificationCell.swift */,
 				32E5A8E827C62922006D9CE8 /* View.xib */,
+				1606160B27CB6C1000CC8717 /* RCollectionViewCell.swift */,
+				1606160F27CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -229,6 +250,7 @@
 				3213E8CE27C3BDA300270EAD /* Main.storyboard in Resources */,
 				3213E8FE27C3C23F00270EAD /* Requests.storyboard in Resources */,
 				3213E8E727C3BEF700270EAD /* RequestDetails.storyboard in Resources */,
+				32EA1BA427CAB51000A91861 /* Notifications.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E957D327C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift in Sources */,
+				9CCD992527C77E2400806DBF /* CatagoryCollectionViewCell.swift in Sources */,
 				3213E8F927C3C06D00270EAD /* SavedVC.swift in Sources */,
 				32E957D527C57B9600DD4CD6 /* PackageCollectionViewCell.swift in Sources */,
 				3213E8EB27C3BF5400270EAD /* OrganizerInfoVC.swift in Sources */,
@@ -247,11 +270,16 @@
 				3213E8F327C3C00A00270EAD /* RequestsVC.swift in Sources */,
 				3213E8F727C3C03700270EAD /* ProfileVC.swift in Sources */,
 				3213E8CB27C3BDA300270EAD /* ServicesVC.swift in Sources */,
+				32EA1BA627CAB6C200A91861 /* NotificationsVC.swift in Sources */,
+				32EA1BA827CAB92B00A91861 /* NotificationCell.swift in Sources */,
 				3213E8C727C3BDA300270EAD /* AppDelegate.swift in Sources */,
 				32EFD16F27C64F2700262F00 /* OrganizersModel.swift in Sources */,
+				1606160C27CB6C1000CC8717 /* RCollectionViewCell.swift in Sources */,
 				3213E8ED27C3BF6400270EAD /* PackageDetailsVC.swift in Sources */,
+				32026C6B27C7AF9900D96693 /* ButtonsFilterCollectionViewCell.swift in Sources */,
 				323C46F127C4109900570619 /* AdsCollectionViewCell.swift in Sources */,
 				3213E8C927C3BDA300270EAD /* SceneDelegate.swift in Sources */,
+				1606161027CBEA7900CC8717 /* PackageDetailsCollectionViewCell.swift in Sources */,
 				3213E8F127C3BFAC00270EAD /* ServiceProvidersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

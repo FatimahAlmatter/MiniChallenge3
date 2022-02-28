@@ -14,12 +14,17 @@ class ServicesVC: UIViewController {
     @IBOutlet weak var pageControlOutlet: UIPageControl!
     @IBOutlet weak var servicesCollection: UICollectionView!
     @IBOutlet weak var packagesCollection: UICollectionView!
+    @IBOutlet weak var filtersBtnsCollection: UICollectionView!
+    
     
     let search = UISearchController()
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]
     var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Wedding"), UIImage(named: "Security")]
     var services = ["Catering","Decorations","Gifts","Technical & DJ","invitation","Wedding", "Security"]
+    
+    var catagories = ["All","Birthday","Graduation","Wedding","Anniversary","bridal-shower","engagement","Baby-shower","Retirement"]
+    
     var timer: Timer?
     var currentIndex = 0
     
@@ -27,7 +32,7 @@ class ServicesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      //  search.searchResultsUpdater = self
+        //  search.searchResultsUpdater = self
         navigationItem.searchController = search
         
         adsCollection.delegate = self
@@ -41,13 +46,52 @@ class ServicesVC: UIViewController {
         
         packagesCollection.delegate = self
         packagesCollection.dataSource = self
+        pageControlOutlet.frame.size.height = 500
         
         let nib = UINib(nibName: "View", bundle: nil)
         packagesCollection.register(nib, forCellWithReuseIdentifier: "packageCell")
         
+        filtersBtnsCollection.delegate = self
+        filtersBtnsCollection.dataSource = self
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 5
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        self.filtersBtnsCollection.collectionViewLayout = layout
         
         
     }
+    
+    @IBAction func notificationPressed(_ sender: Any) {
+        performSegue(withIdentifier: "notificationScreen", sender: nil)
+
+    }
+    @IBAction func filterButton(_ sender: Any) {
+    }
+    
+    
+    
+    //    override func viewDidLayoutSubviews() {
+    //        super.viewDidLayoutSubviews()
+    //        let scrollview = UIScrollView(frame: CGRect(x: 10, y: 10, width: view.frame.size.width , height: view.frame.size.height))
+    //        scrollview.backgroundColor = .red
+    //        view.addSubview(scrollview)
+    //
+    //        scrollview.addSubview(adsCollection)
+    //        scrollview.addSubview(serviceLabel)
+    //        scrollview.addSubview(pageControlOutlet)
+    //        scrollview.addSubview(servicesCollection)
+    //        scrollview.addSubview(lineView)
+    //        scrollview.addSubview(packageLabel)
+    //        scrollview.addSubview(filtersBtnsCollection)
+    //        scrollview.addSubview(packagesCollection)
+    //
+    //        scrollview.contentSize = CGSize(width: view.frame.size.width, height: 2200)
+    //
+    //    }
+    
     
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
@@ -65,26 +109,26 @@ class ServicesVC: UIViewController {
         
     }
     
-//    func updateSearchResults(for searchController: UISearchController) {
-//        guard let text = search.searchBar.text else {
-//            return
-//        }
-//        search.searchResultsController
-//    }
+    //    func updateSearchResults(for searchController: UISearchController) {
+    //        guard let text = search.searchBar.text else {
+    //            return
+    //        }
+    //        search.searchResultsController
+    //    }
+    
+    
 }
 
-
-
-
 extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout{
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.adsCollection {
             return adsArray.count
         } else if collectionView == self.servicesCollection {
             return servicesArray.count
-        } else {
+        } else if collectionView == self.packagesCollection {
             return organizer.organizerInfo.count
+        } else {
+            return catagories.count
         }
         
     }
@@ -99,14 +143,14 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             cell2.serviceImg.image = servicesArray[indexPath.row]
             cell2.serviceName.text = services[indexPath.row]
             return cell2
-        } else {
-            let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
             
+        } else if collectionView == self.packagesCollection  {
+            let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
             cell3.layer.cornerRadius = 12
             cell3.storeImg.image = organizer.organizerInfo[indexPath.row].img
             cell3.storeName.text = organizer.organizerInfo[indexPath.row].name
             cell3.storeRate.text = organizer.organizerInfo[indexPath.row].rate
-            cell3.storeOverview.text = organizer.organizerInfo[indexPath.row].overView
+            cell3.storeOverview.text = "Overview: \(organizer.organizerInfo[indexPath.row].overView)"
             
             if organizer.organizerInfo[indexPath.row].isSaved == true {
                 cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
@@ -123,10 +167,28 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             
             return cell3
             
+        } else {
+            let cell4 = collectionView.dequeueReusableCell(withReuseIdentifier: "catagoiesCell", for: indexPath) as! ButtonsFilterCollectionViewCell
+            cell4.filterBtn.setTitle(catagories[indexPath.row], for: .normal)
+            cell4.filterBtn.translatesAutoresizingMaskIntoConstraints = false
+            //the following code is to change the button size depends on text lenght
+            let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
+            cell4.filterBtn.frame.size = desiredButtonSize
+            
+            
+            return cell4
         }
         
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let servce = servicesArray[indexPath.row]
+        
+        print("index path \(indexPath.row)")
+    }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.adsCollection {
@@ -135,9 +197,11 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
         } else if collectionView == self.servicesCollection {
             return CGSize(width: 170, height: collectionView.frame.height)
             
-        } else {
-            return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        } else if collectionView == self.packagesCollection{
+            return CGSize(width: collectionView.frame.width  , height: 170)
             
+        } else {
+            return CGSize(width: collectionView.frame.size.width , height: collectionView.frame.height)
         }
     }
     
@@ -146,12 +210,9 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             return 20
         } else {
             return 1
-            
-            
         }
-        
-        
     }
+    
     
 }
 

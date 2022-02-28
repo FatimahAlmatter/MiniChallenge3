@@ -7,6 +7,14 @@
 
 import UIKit
 
+//
+//  PackageCollectionViewCell.swift
+//  MiniChallenge3
+//
+//  Created by Fatimah Almatter on 22/02/2022.
+//
+
+
 class PackageCollectionViewCell: UICollectionViewCell {
     
     
@@ -18,4 +26,16 @@ class PackageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var includePackageTag: UILabel!
     
         
+    @IBAction func savedBtnPressed(_ sender: UIButton) {
+        //if empty
+        if SavedAction.tag == 1 {
+            SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            SavedAction.tag = 0
+        
+        } else {
+            SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            SavedAction.tag = 1
+            
+        }
+    }
 }
