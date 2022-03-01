@@ -33,14 +33,13 @@ class RequestDetailsVC: UIViewController {
     }
     
     @IBAction func confirmreq(_ sender: Any) {
-        let alert = UIAlertController(title: "Pending", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
+        let alert = UIAlertController(title: "Pending...", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         
         present(alert, animated: true) {
             self.performSegue(withIdentifier: "notificationScreen", sender: self)
         }
     }
-    
     
     @IBAction func stepBtn(_ sender: UIStepper) {
         labeln.text = String(Int(sender.value))
