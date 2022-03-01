@@ -44,6 +44,9 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="baseBackgroundColor" red="0.40392160420000001" green="0.32941177490000001" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="confirmreq:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6C7-yM-Eg2"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-05-gaO">
                                                 <rect key="frame" x="260.66666666666669" y="397" width="10.333333333333314" height="21"/>
@@ -149,11 +152,22 @@
                         <outlet property="labeln" destination="MNh-05-gaO" id="Jft-A4-abg"/>
                         <outlet property="menu" destination="b5g-HQ-a1p" id="7Xf-Tr-FcW"/>
                         <outlet property="note" destination="5TT-qe-NBa" id="L7G-zI-1NZ"/>
+                        <segue destination="JMW-CV-vfe" kind="show" identifier="notificationScreen" id="RbR-e6-Vhm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44.615384615384613" y="80.33175355450237"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="D9y-46-lgv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="JMW-CV-vfe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lPy-if-PDs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23F-yQ-KmM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="7"/>
         </scene>
     </scenes>
     <resources>
