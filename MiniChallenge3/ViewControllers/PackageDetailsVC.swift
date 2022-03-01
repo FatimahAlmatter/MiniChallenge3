@@ -19,12 +19,14 @@ class PackageDetailsVC: UIViewController, UICollectionViewDelegate, UICollection
     PckgDetails.dataSource = self
   }
     
-    @IBAction func confirmbutton(_ sender: Any) {  let alert = UIAlertController(title: "Pending...", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        
-        present(alert, animated: true) {
+    @IBAction func confirmbutton(_ sender: Any) {
+        let alert = UIAlertController(title: "Pending...", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { alert in
             self.performSegue(withIdentifier: "notificationScreen", sender: self)
-        }
+        }))
+ 
+        
+        present(alert, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
