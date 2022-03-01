@@ -44,6 +44,9 @@
                                             <color key="baseForegroundColor" systemColor="systemGray6Color"/>
                                             <color key="baseBackgroundColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="confirmbutton:" destination="HyT-UR-5ZE" eventType="touchUpInside" id="GUE-iu-ddn"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vut-st-Gvw">
                                         <rect key="frame" x="241" y="0.0" width="1" height="87"/>
@@ -126,11 +129,22 @@ Catring for 50
                     </view>
                     <connections>
                         <outlet property="PckgDetails" destination="Chd-XQ-4zi" id="dYv-6n-MPo"/>
+                        <segue destination="uNq-pr-rTG" kind="show" identifier="notificationScreen" id="HeD-wI-hCT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LQ-MJ-DK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-852.30769230769226" y="-48.341232227488149"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="2mm-Fo-TBZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notifications" id="uNq-pr-rTG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BsU-i8-nfe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHB-Wd-nMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="15"/>
         </scene>
     </scenes>
     <resources>
