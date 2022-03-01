@@ -35,7 +35,7 @@ class RequestDetailsVC: UIViewController {
     @IBAction func confirmreq(_ sender: Any) {
         let alert = UIAlertController(title: "Pending...", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
        //alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { UIAlertAction in
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { UIAlertAction in
             self.performSegue(withIdentifier: "notificationScreen", sender: self)
             
 
