@@ -10,4 +10,5 @@ import UIKit
 class PackageDetailsCollectionViewCell: UICollectionViewCell {
  
     
+    @IBOutlet weak var imgCatalog: UIImageView!
 }

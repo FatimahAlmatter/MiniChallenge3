@@ -17,7 +17,7 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     var organiazer = OrganizersModel()
     //
     var arrayCatalog = [UIImage(named: "1"), UIImage(named: "22"), UIImage(named: "33"), UIImage(named: "444"), UIImage(named: "5555")]
-    var arrayPackage = [UIImage(named: "p1"), UIImage(named: "p2"), UIImage(named: "p3")]
+    var arrayPackage = [UIImage(named: "p3"), UIImage(named: "p2"), UIImage(named: "p1")]
 
     
     override func viewDidLoad() {
