@@ -47,7 +47,7 @@ class OrganizersModel {
         Organizer(img: UIImage(named: "store4"), name: "Luxury event", rate: "4.3", overView: "organizing parties and offer packages with good prices", isSaved: true, isIncludePackage: true)
     ]
     
-    
+    var orderInThepast : [Request] = [Request(organizerName: "Glowing Party", partyDate: "02/03/2019", partyType: "BirthDay"), Request(organizerName: "Party in Box", partyDate: "02/08/2021", partyType: "Weeding")]
     
     var filterData = [Organizer]()
     
