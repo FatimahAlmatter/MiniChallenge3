@@ -19,7 +19,6 @@ class RequestsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         super.viewDidLoad()
         
         Collection.delegate = self
-        
         Collection.dataSource = self
         
         
@@ -80,9 +79,4 @@ class RequestsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
 }
 
-//    struct PKGD{
-//        Let photo = UIImage
-//        let storeName = String
-//        let date = Int
-//
-//    }
+
