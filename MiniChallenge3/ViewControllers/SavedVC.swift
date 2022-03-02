@@ -39,6 +39,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         cell3.storeRate.text = organizer.filterData[indexPath.row].rate
         cell3.storeOverview.text = "Overview: \(organizer.filterData[indexPath.row].overView)"
         
+        
         if organizer.filterData[indexPath.row].isSaved == true {
             cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
         } else {

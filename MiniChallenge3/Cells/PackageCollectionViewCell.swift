@@ -29,25 +29,20 @@ class PackageCollectionViewCell: UICollectionViewCell {
     
     @IBAction func savedBtnPressed(_ sender: UIButton) {
         //if empty
-            if SavedAction.tag == 0 {
-                print("before: \(SavedAction.tag)")
-                SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
-                SavedAction.tag = 1
-                print("after: \(SavedAction.tag)")
-                
-                
-                
+            if sender.tag == 0 {
+                print("before: \(sender.tag)")
+                sender.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+                sender.tag = 1
+                print("after: \(sender.tag)")
                 
             } else {
-                print("before: \(SavedAction.tag)")
-                SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
-                SavedAction.tag = 0
-                print("after: \(SavedAction.tag)")
-                
-                
-                
+                print("before: \(sender.tag)")
+                sender.setImage(UIImage(systemName: "bookmark"), for: .normal)
+                sender.tag = 0
+                print("after: \(sender.tag)")
+
             }
-        
-        
+
+
     }
 }
