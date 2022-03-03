@@ -54,6 +54,7 @@ class ServicesVC: UIViewController {
         filtersBtnsCollection.delegate = self
         filtersBtnsCollection.dataSource = self
         
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumInteritemSpacing = 0
@@ -85,6 +86,7 @@ class ServicesVC: UIViewController {
         
     }
     @IBAction func filterButton(_ sender: Any) {
+        
     }
     
     

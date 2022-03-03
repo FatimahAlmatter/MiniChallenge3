@@ -24,6 +24,9 @@
                                     <segment title="Past"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="segmentPressed:" destination="9CC-RI-hYJ" eventType="valueChanged" id="IS9-mi-rin"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8w9-Yc-8jv">
                                 <rect key="frame" x="0.0" y="221" width="390" height="540"/>
@@ -88,6 +91,7 @@
                     <navigationItem key="navigationItem" title="Requests" id="lgo-gZ-5Dv"/>
                     <connections>
                         <outlet property="Collection" destination="8w9-Yc-8jv" id="WMF-Oc-yfI"/>
+                        <outlet property="Segmentcontrol" destination="9bP-ur-sgb" id="gTx-FM-bFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4N-XY-G2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
