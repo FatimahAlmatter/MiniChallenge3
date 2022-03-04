@@ -11,4 +11,5 @@ class ButtonsFilterCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var filterBtn: UIButton!
     
+    
 }

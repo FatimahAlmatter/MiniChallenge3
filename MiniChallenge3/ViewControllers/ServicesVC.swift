@@ -17,6 +17,7 @@ class ServicesVC: UIViewController {
     @IBOutlet weak var filtersBtnsCollection: UICollectionView!
     
     
+    
     let search = UISearchController()
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]
@@ -53,6 +54,7 @@ class ServicesVC: UIViewController {
         
         filtersBtnsCollection.delegate = self
         filtersBtnsCollection.dataSource = self
+
         
         
         let layout = UICollectionViewFlowLayout()
@@ -85,9 +87,7 @@ class ServicesVC: UIViewController {
         performSegue(withIdentifier: "notificationScreen", sender: nil)
         
     }
-    @IBAction func filterButton(_ sender: Any) {
-        
-    }
+
     
     
     
@@ -177,13 +177,29 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             //the following code is to change the button size depends on text lenght
             let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
             cell4.filterBtn.frame.size = desiredButtonSize
+            cell4.filterBtn.tag = indexPath.row
             
+//            if cell4.filterBtn.tag == 0 {
+//                cell4.filterBtn.backgroundColor = .red
+//                cell4.filterBtn.titleLabel?.textColor = .white
+//
+//            }
+            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
             
             return cell4
         }
         
         
     }
+    
+    @objc func buttonFilter(sender: UIButton){
+     //   let indexpath1 = IndexPath(row: sender.tag, section: 0)
+       // sender.backgroundColor = .red
+
+      
+        
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.servicesCollection {
@@ -196,8 +212,8 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
                 performSegue(withIdentifier: "goToOrganizerScreen", sender: self)
             }
             
-        } else {
-            print("nothing")
+        } else if collectionView == self.filtersBtnsCollection {
+           
         }
     }
     
