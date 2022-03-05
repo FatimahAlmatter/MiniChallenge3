@@ -1,3 +1,5 @@
+
+
 //Services Screen
 "Services" = "الخدمات";
 "Packages" = "البكجات";
@@ -36,13 +38,10 @@
 "offer packages with good prices" = "تتوفر بكجات بأسعار مناسبه";
 
 
-
-
 //OrgnizerInfo
 "Catalog" = "معرض الصور";
 "feedback" = "التقييمات";
 "more" = "المزيد";
-
 
 
 //PackageDetails

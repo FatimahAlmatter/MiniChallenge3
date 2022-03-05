@@ -16,11 +16,8 @@ class RequestDetailsVC: UIViewController {
     @IBOutlet weak var partyTypeLbl: UILabel!
     @IBOutlet weak var notesLbl: UILabel!
     @IBOutlet weak var confirmBtn: UIButton!
-    
-    
-    
-    
     @IBOutlet weak var note: UITextView!
+    
     let menu1 = ["Wedding".localized, "Birthday".localized, "Graduation".localized, "Anniversary".localized, "bridal-shower".localized, "engagement".localized, "Baby-shower".localized, "Retirement".localized]
     
     var pickerView = UIPickerView()
