@@ -178,12 +178,6 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
             cell4.filterBtn.frame.size = desiredButtonSize
             cell4.filterBtn.tag = indexPath.row
-            
-//            if cell4.filterBtn.tag == 0 {
-//                cell4.filterBtn.backgroundColor = .red
-//                cell4.filterBtn.titleLabel?.textColor = .white
-//
-//            }
             cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
             
             return cell4
@@ -193,11 +187,9 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     }
     
     @objc func buttonFilter(sender: UIButton){
-     //   let indexpath1 = IndexPath(row: sender.tag, section: 0)
-       // sender.backgroundColor = .red
+        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+        sender.backgroundColor = .red
 
-      
-        
     }
     
     
@@ -213,10 +205,12 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             }
             
         } else if collectionView == self.filtersBtnsCollection {
-           
+            //TODO
         }
     }
     
+    
+   
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

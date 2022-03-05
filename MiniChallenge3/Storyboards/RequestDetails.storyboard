@@ -40,7 +40,7 @@
                                                     <constraint firstAttribute="width" constant="293" id="x7d-2w-Wbk"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Confirm Request">
+                                                <buttonConfiguration key="configuration" style="filled" title="Confirm Request" cornerStyle="large">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                                     <color key="baseBackgroundColor" red="0.40392160420000001" green="0.32941177490000001" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>

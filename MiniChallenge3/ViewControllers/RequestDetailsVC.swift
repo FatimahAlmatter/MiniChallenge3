@@ -23,6 +23,7 @@ class RequestDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "New Request"
+        note.layer.cornerRadius = 12
         
         pickerView.delegate = self
         pickerView.dataSource = self

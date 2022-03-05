@@ -13,6 +13,7 @@ class PackageDetailsVC: UIViewController, UICollectionViewDelegate, UICollection
     @IBOutlet weak var PckgDetails: UICollectionView!
     var arrpackgeCatalog = [UIImage(named: "pkg1"), UIImage(named: "pkg2"), UIImage(named: "pkg3")]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Package Details"
