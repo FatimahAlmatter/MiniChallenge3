@@ -148,10 +148,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="confirmBtn" destination="Qyi-Oj-nj5" id="dTv-y5-aMp"/>
                         <outlet property="date" destination="Ud2-jM-gFa" id="cyy-ye-fCE"/>
                         <outlet property="labeln" destination="MNh-05-gaO" id="Jft-A4-abg"/>
                         <outlet property="menu" destination="b5g-HQ-a1p" id="7Xf-Tr-FcW"/>
+                        <outlet property="noOfGusstsLbl" destination="fwX-69-G7F" id="F8T-B6-JS2"/>
                         <outlet property="note" destination="5TT-qe-NBa" id="L7G-zI-1NZ"/>
+                        <outlet property="notesLbl" destination="aE8-Vz-tzp" id="pFD-84-aiU"/>
+                        <outlet property="partyTypeLbl" destination="wFt-zB-ItY" id="lqj-i7-zuR"/>
                         <segue destination="JMW-CV-vfe" kind="show" identifier="notificationScreen" id="RbR-e6-Vhm"/>
                     </connections>
                 </viewController>

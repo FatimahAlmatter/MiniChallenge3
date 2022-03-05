@@ -15,6 +15,9 @@ class ServicesVC: UIViewController {
     @IBOutlet weak var servicesCollection: UICollectionView!
     @IBOutlet weak var packagesCollection: UICollectionView!
     @IBOutlet weak var filtersBtnsCollection: UICollectionView!
+    @IBOutlet weak var serviceLbl: UILabel!
+    @IBOutlet weak var packLbl: UILabel!
+    
     
     
     
@@ -22,9 +25,9 @@ class ServicesVC: UIViewController {
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]
     var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Wedding"), UIImage(named: "Security")]
-    var services = ["Catering","Decorations","Gifts","Technical & DJ","invitation","Wedding", "Security"]
+    var services = ["Catering".localized,"Decorations".localized,"Gifts".localized,"Technical & DJ".localized,"invitation".localized,"Wedding".localized, "Security".localized]
     
-    var catagories = ["All","Birthday","Graduation","Wedding","Anniversary","bridal-shower","engagement","Baby-shower","Retirement"]
+    var catagories = ["All".localized,"Birthday".localized,"Graduation".localized,"Wedding".localized,"Anniversary".localized,"bridal-shower".localized,"engagement".localized,"Baby-shower".localized,"Retirement".localized]
     
     var timer: Timer?
     var currentIndex = 0
@@ -32,6 +35,9 @@ class ServicesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        serviceLbl.text = "Services".localized
+        packLbl.text = "Packages".localized
         
         //  search.searchResultsUpdater = self
         navigationItem.searchController = search
@@ -70,14 +76,14 @@ class ServicesVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "serviceProvidersScreen" {
             let VC = segue.destination as? ServiceProvidersVC
-            VC?.title = "Catering"
+            VC?.title = "Catering".localized
             VC?.navigationItem.largeTitleDisplayMode = .never
 
 
             
         } else if segue.identifier == "goToOrganizerScreen" {
             let VC = segue.destination as? OrganizerInfoVC
-            VC?.title = "Organizer Info"
+            VC?.title = "Organizer Info".localized
             VC?.navigationItem.largeTitleDisplayMode = .never
 
         }
@@ -88,10 +94,6 @@ class ServicesVC: UIViewController {
         
     }
 
-    
-    
-    
-    
     
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
@@ -150,7 +152,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             cell3.storeImg.image = organizer.organizerInfo[indexPath.row].img
             cell3.storeName.text = organizer.organizerInfo[indexPath.row].name
             cell3.storeRate.text = organizer.organizerInfo[indexPath.row].rate
-            cell3.storeOverview.text = "Overview: \(organizer.organizerInfo[indexPath.row].overView)"
+            cell3.storeOverview.text = "Overview".localized + ": \(organizer.organizerInfo[indexPath.row].overView)"
             
             if organizer.organizerInfo[indexPath.row].isSaved == true {
                 cell3.SavedAction.tag = 1
@@ -163,6 +165,8 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             
             if organizer.organizerInfo[indexPath.row].isIncludePackage == true {
                 cell3.includePackageTag.isHidden = false
+                cell3.includePackageTag.text = "include Package".localized
+
             } else {
                 cell3.includePackageTag.isHidden = true
             }

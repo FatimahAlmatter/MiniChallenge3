@@ -62,7 +62,7 @@
                                                 <color key="pageIndicatorTintColor" red="0.7843137255" green="0.74509803919999995" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="currentPageIndicatorTintColor" red="0.16862745100000001" green="0.14117647059999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </pageControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJX-Rm-Qub">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJX-Rm-Qub">
                                                 <rect key="frame" x="16" y="223" width="81.666666666666671" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" red="0.16862745100000001" green="0.14117647059999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,7 +116,7 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMT-DW-6X8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMT-DW-6X8">
                                                 <rect key="frame" x="16" y="462" width="91" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <color key="textColor" red="0.16862745100000001" green="0.14117647059999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -283,8 +283,10 @@
                     <connections>
                         <outlet property="adsCollection" destination="16e-np-XdI" id="RmA-eh-jt9"/>
                         <outlet property="filtersBtnsCollection" destination="hVF-Eg-irt" id="ecW-fX-N1x"/>
+                        <outlet property="packLbl" destination="sMT-DW-6X8" id="T5h-ed-F3e"/>
                         <outlet property="packagesCollection" destination="0Dv-ch-ecf" id="CWp-PE-pzm"/>
                         <outlet property="pageControlOutlet" destination="WWw-c9-lxd" id="P9Z-sM-DST"/>
+                        <outlet property="serviceLbl" destination="oJX-Rm-Qub" id="RKA-Mv-Wda"/>
                         <outlet property="servicesCollection" destination="cfe-Vj-WLf" id="aml-YJ-TSe"/>
                         <segue destination="N7W-yl-oND" kind="show" identifier="goToOrganizerScreen" id="XIN-aU-tqZ"/>
                         <segue destination="pd6-AE-3fM" kind="show" identifier="serviceProvidersScreen" id="X0h-Tw-zdM"/>

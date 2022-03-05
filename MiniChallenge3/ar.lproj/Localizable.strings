@@ -1,0 +1,81 @@
+//Services Screen
+"Services" = "الخدمات";
+"Packages" = "البكجات";
+
+
+"Catering" = "الضيافة" ;
+"Decorations" = "الديكورات";
+"Gifts" = "الهدايا";
+"Technical & DJ" = "الصوتيات";
+"invitation" = "الدعوات";
+"Wedding" = "زواج";
+"Security" = "الأمن و الحراسة";
+
+
+"All" = "الكل";
+"Birthday" = "حفلات الميلاد";
+"Graduation" = "تخرج";
+"Anniversary" = "ذكرى";
+"bridal-shower" = "توديع عزوبيه";
+"engagement" = "خطوبه";
+"Baby-shower" = "كشف جنس الجنين";
+"Retirement" = "تقاعد";
+
+"Organizer Info" = "معلومات المنسق";
+"Overview" = "نظره عامه";
+"include Package" = "تتوفر باكجات";
+
+//Model (arrays)
+"GHADEER ASHOOR" = "غدير عاشور";
+"Modern Events & Wedding Designer" = "منسق حفلات و زواجات";
+"Party in Box" = "حفله في صندوق";
+"organizing parties for more than 10 years" = "منسق حفلات من أكثر من ١٠ سنوات";
+"Glowing Party" = "الحفلة المضيئة";
+"organizing parties and offer packages with good prices" = "متخصص تنظيم حفلات ، يتم توفير باكجات بأسعار مناسبه ";
+"Luxury event" = "الحفلات الفاخرة";
+"offer packages with good prices" = "تتوفر بكجات بأسعار مناسبه";
+
+
+
+
+//OrgnizerInfo
+"Catalog" = "معرض الصور";
+"feedback" = "التقييمات";
+"more" = "المزيد";
+
+
+
+//PackageDetails
+"Package Details" = "تفاصيل البكج";
+"Pending" = "مُعلق";
+"Your request is pending now, you will be notified once the organizer accept it" = "طلبك معلق الآن، سوف يتم اشعارك في حال قبول الطلب";
+"Ok" = "حسنًا";
+"chooseDate" = "اختر يوم و تاريخ المناسبة";
+"confirm" = "تأكيد الطلب";
+"price" = "السعر";
+"Include" = "يتضمن";
+"packageDes" = " ١ قوس بالون
+٢٠ فازة ورد
+١٠ طاولات
+٥٠ كرسي
+لوح دونات
+ضيافه لعدد 50 شخص
+";
+
+
+//ٍRequestDetails
+"New Request" = "طلب جديد";
+"notes" = "ملاحظات";
+"numberOfGuests" = "عدد الضيوف";
+
+//Saved
+"Saved Items" = "المحفوظات";
+
+//Notifications
+"Notifications" = "التنبيهات";
+"Organizer name" = "إسم المنسق";
+"Party date" = "تاريخ المناسبه";
+"Party type" = "نوع المناسبه";
+"status" = "تم قبول طلبك";
+"pay" = "ادفع الآن";
+

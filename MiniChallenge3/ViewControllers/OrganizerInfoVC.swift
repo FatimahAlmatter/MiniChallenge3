@@ -13,6 +13,13 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     @IBOutlet weak var packageCollection: UICollectionView!
     @IBOutlet weak var feedback: UICollectionView!
     @IBOutlet weak var collectionview: UICollectionView!
+    @IBOutlet weak var storeLbl: UILabel!
+    @IBOutlet weak var overviewLbl: UILabel!
+    @IBOutlet weak var packagesLbl: UILabel!
+    @IBOutlet weak var catalogLbl: UILabel!
+    @IBOutlet weak var feedbacksLbl: UILabel!
+    @IBOutlet weak var moreLBL: UIButton!
+    @IBOutlet weak var descriptionLbl: UILabel!
     
     var organiazer = OrganizersModel()
     //
@@ -22,7 +29,14 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+        storeLbl.text = "GHADEER ASHOOR".localized
+        overviewLbl.text = "Overview".localized
+        packagesLbl.text = "Packages".localized
+        catalogLbl.text = "Catalog".localized
+        feedbacksLbl.text = "feedback".localized
+        moreLBL.titleLabel?.text = "more".localized
+        descriptionLbl.text = "Modern Events & Wedding Designer".localized
+        
         
         collectionview.delegate = self
         collectionview.dataSource = self

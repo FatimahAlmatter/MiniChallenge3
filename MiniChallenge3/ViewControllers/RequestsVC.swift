@@ -55,6 +55,8 @@ class RequestsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             
             cell.PkgDate.text = model.requests[indexPath.row].partyDate
             cell.PartyType.text = model.requests[indexPath.row].partyType
+            cell.Paymentphoto.image = UIImage(named: "Mastercard")
+
             
             return cell
         case 1:
