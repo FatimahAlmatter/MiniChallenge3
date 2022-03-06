@@ -41,8 +41,10 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         
         
         if organizer.filterData[indexPath.row].isSaved == true {
+            cell3.SavedAction.tag = 1
             cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
         } else {
+            cell3.SavedAction.tag = 0
             cell3.SavedAction.setImage(UIImage(systemName: "bookmark"), for: .normal)
         }
         
@@ -53,7 +55,6 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         } else {
             cell3.includePackageTag.isHidden = true
         }
-        
         
         return cell3
         
