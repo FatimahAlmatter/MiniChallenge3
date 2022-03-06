@@ -68,6 +68,9 @@
                                                         <segment title="AR"/>
                                                     </segments>
                                                     <color key="selectedSegmentTintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="changeLang:" destination="tDo-Zt-5Vv" eventType="valueChanged" id="vjw-1h-Tey"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -109,6 +112,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqE-oe-nsy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="tDo-Zt-5Vv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1861.5384615384614" y="2217.2985781990519"/>
         </scene>
