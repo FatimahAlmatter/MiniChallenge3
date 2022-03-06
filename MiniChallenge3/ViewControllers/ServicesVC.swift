@@ -182,8 +182,8 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             //the following code is to change the button size depends on text lenght
             let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
             cell4.filterBtn.frame.size = desiredButtonSize
-            cell4.filterBtn.tag = indexPath.row
-            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
+//            cell4.filterBtn.tag = indexPath.row
+//            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
             
             return cell4
         }
@@ -191,11 +191,11 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
         
     }
     
-    @objc func buttonFilter(sender: UIButton){
-        let indexpath1 = IndexPath(row: sender.tag, section: 0)
-        sender.backgroundColor = .red
-
-    }
+//    @objc func buttonFilter(sender: UIButton){
+//        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+//        sender.backgroundColor = .red
+//
+//    }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
