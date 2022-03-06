@@ -37,7 +37,7 @@ class OrganizersModel {
     
     var requests : [Request] = [Request(organizerName: "GHADEER ASHOOR".localized, partyDate: "02/03/2022", partyType: "Birthday".localized)]
     
-    var coustemrfeedback : [FeedBack] = [ FeedBack(rate: "4.3", review: "Honestly, the service was more than wonderful ", date: "20 APR") , FeedBack(rate: "4.0" , review: "Like pictures", date: "16 APR") , FeedBack(rate: "3.6", review: "Honestly, the service was great", date: "07 APR"), FeedBack(rate: "4.0", review: "I don't have anything to add, the service is very good", date: "1 MAR")
+    var coustemrfeedback : [FeedBack] = [ FeedBack(rate: "4.3", review: "Honestly, the service was more than wonderful".localized, date: "20 APR") , FeedBack(rate: "4.0" , review: "Like pictures".localized, date: "16 APR") , FeedBack(rate: "3.6", review: "Honestly, the service was great".localized, date: "07 APR"), FeedBack(rate: "4.0", review: "I don't have anything to add, the service is very good".localized, date: "1 MAR")
     ]
     
     var organizerInfo : [Organizer] = [

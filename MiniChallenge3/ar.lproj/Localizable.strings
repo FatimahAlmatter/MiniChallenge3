@@ -2,7 +2,7 @@
 
 //Services Screen
 "Services" = "الخدمات";
-"Packages" = "البكجات";
+"Packages" = "الباقات";
 
 
 "Catering" = "الضيافة" ;
@@ -25,7 +25,7 @@
 
 "Organizer Info" = "معلومات المنسق";
 "Overview" = "نظره عامه";
-"include Package" = "تتوفر باكجات";
+"include Package" = "تتوفر باقات";
 
 //Model (arrays)
 "GHADEER ASHOOR" = "غدير عاشور";
@@ -36,6 +36,11 @@
 "organizing parties and offer packages with good prices" = "متخصص تنظيم حفلات ، يتم توفير باكجات بأسعار مناسبه ";
 "Luxury event" = "الحفلات الفاخرة";
 "offer packages with good prices" = "تتوفر بكجات بأسعار مناسبه";
+
+"Honestly, the service was more than wonderful" = "الخدمة كانت أكثر من رائعة، أشكركم على جهودكم";
+"Like pictures" = "نفس الصور بالضبببطط";
+"I don't have anything to add, the service is very good" = "كل شي كان جيد من خدمه و تعامل و اسعار";
+"Honestly, the service was great" = "الخدمه رائعه";
 
 
 //OrgnizerInfo

@@ -21,6 +21,7 @@ class ServicesVC: UIViewController {
     
     
     
+
     let search = UISearchController()
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]

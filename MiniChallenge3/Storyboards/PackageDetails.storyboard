@@ -140,28 +140,25 @@ Catring for 50
                                 </constraints>
                             </view>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="R9J-Ug-qvZ">
-                                <rect key="frame" x="16" y="511" width="358" height="54"/>
+                                <rect key="frame" x="8" y="504" width="218" height="31"/>
                                 <color key="tintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="kq7-4C-jDR"/>
-                                </constraints>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wKj-AM-hoy"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="R9J-Ug-qvZ" secondAttribute="trailing" constant="16" id="27i-hj-2QK"/>
                             <constraint firstItem="8Ke-P1-KlI" firstAttribute="leading" secondItem="NFw-f9-Wbz" secondAttribute="leading" id="5n2-x1-mzT"/>
                             <constraint firstItem="Chd-XQ-4zi" firstAttribute="top" secondItem="y8C-gC-1Tx" secondAttribute="bottom" constant="17" id="6ir-iM-bh1"/>
+                            <constraint firstItem="R9J-Ug-qvZ" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="8" id="7B7-YX-oCQ"/>
                             <constraint firstItem="bhY-G0-Odo" firstAttribute="top" secondItem="XV3-78-VdN" secondAttribute="bottom" constant="14" id="7uG-Je-S7G"/>
                             <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="y8C-gC-1Tx" secondAttribute="trailing" constant="16" id="9rd-VG-Z3w"/>
                             <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="2wN-pt-d7U" secondAttribute="trailing" constant="16" id="A8F-iB-YuJ"/>
                             <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="bhY-G0-Odo" secondAttribute="trailing" constant="16" id="B5j-M4-r6q"/>
                             <constraint firstItem="2wN-pt-d7U" firstAttribute="top" secondItem="CWo-qe-g73" secondAttribute="bottom" constant="12" id="BSW-Jv-rZd"/>
+                            <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="R9J-Ug-qvZ" secondAttribute="trailing" constant="164" id="EUe-Iy-CK1"/>
                             <constraint firstItem="5hh-NO-Rrf" firstAttribute="trailing" secondItem="wKj-AM-hoy" secondAttribute="trailing" id="Htw-4S-63d"/>
                             <constraint firstItem="bhY-G0-Odo" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="16" id="IXI-zv-UZF"/>
                             <constraint firstItem="y8C-gC-1Tx" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="16" id="ND7-PO-W0x"/>
-                            <constraint firstItem="R9J-Ug-qvZ" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="16" id="PVN-9d-AUb"/>
                             <constraint firstItem="Chd-XQ-4zi" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="16" id="Rdn-35-77E"/>
                             <constraint firstAttribute="trailing" secondItem="CWo-qe-g73" secondAttribute="trailing" id="RxX-1D-Owh"/>
                             <constraint firstItem="5hh-NO-Rrf" firstAttribute="centerX" secondItem="NFw-f9-Wbz" secondAttribute="centerX" id="TRI-bR-rog"/>
@@ -175,9 +172,9 @@ Catring for 50
                             <constraint firstItem="2wN-pt-d7U" firstAttribute="leading" secondItem="wKj-AM-hoy" secondAttribute="leading" constant="16" id="gXN-wm-Xcr"/>
                             <constraint firstItem="wKj-AM-hoy" firstAttribute="trailing" secondItem="XV3-78-VdN" secondAttribute="trailing" constant="16" id="gj6-VP-WoO"/>
                             <constraint firstItem="CWo-qe-g73" firstAttribute="top" secondItem="Chd-XQ-4zi" secondAttribute="bottom" constant="22" id="lqN-Uc-V2L"/>
+                            <constraint firstItem="R9J-Ug-qvZ" firstAttribute="top" secondItem="2wN-pt-d7U" secondAttribute="bottom" constant="8" id="rGU-BG-XzW"/>
                             <constraint firstItem="CWo-qe-g73" firstAttribute="leading" secondItem="NFw-f9-Wbz" secondAttribute="leading" id="tKH-AN-jxy"/>
                             <constraint firstItem="Chd-XQ-4zi" firstAttribute="trailing" secondItem="wKj-AM-hoy" secondAttribute="trailing" id="wDB-dK-IV7"/>
-                            <constraint firstItem="R9J-Ug-qvZ" firstAttribute="top" secondItem="2wN-pt-d7U" secondAttribute="bottom" constant="15" id="zOy-Ty-2TN"/>
                         </constraints>
                     </view>
                     <connections>
