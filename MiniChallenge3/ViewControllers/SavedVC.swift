@@ -13,7 +13,7 @@ class SavedVC: UIViewController {
     @IBOutlet weak var savedCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Saved Items".localized
         
         savedCollectionView.delegate = self
         savedCollectionView.dataSource = self
@@ -37,7 +37,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         cell3.storeImg.image = organizer.filterData[indexPath.row].img
         cell3.storeName.text = organizer.filterData[indexPath.row].name
         cell3.storeRate.text = organizer.filterData[indexPath.row].rate
-        cell3.storeOverview.text = "Overview: \(organizer.filterData[indexPath.row].overView)"
+        cell3.storeOverview.text = "Overview".localized + "\(organizer.filterData[indexPath.row].overView)"
         
         
         if organizer.filterData[indexPath.row].isSaved == true {
@@ -48,6 +48,8 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         
         if organizer.filterData[indexPath.row].isIncludePackage == true {
             cell3.includePackageTag.isHidden = false
+            cell3.includePackageTag.text = "include Package".localized
+
         } else {
             cell3.includePackageTag.isHidden = true
         }

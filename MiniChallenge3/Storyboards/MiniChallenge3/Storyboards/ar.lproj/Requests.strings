@@ -1,0 +1,21 @@
+
+/* Class = "UISegmentedControl"; 9bP-ur-sgb.segmentTitles[0] = "Upcoming"; ObjectID = "9bP-ur-sgb"; */
+"9bP-ur-sgb.segmentTitles[0]" = "القادمة";
+
+/* Class = "UISegmentedControl"; 9bP-ur-sgb.segmentTitles[1] = "Past"; ObjectID = "9bP-ur-sgb"; */
+"9bP-ur-sgb.segmentTitles[1]" = "السابقة";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KFC-yP-geQ"; */
+"KFC-yP-geQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OZP-ib-Ox5"; */
+"OZP-ib-Ox5.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gsR-Hi-DkL"; */
+"gsR-Hi-DkL.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Requests"; ObjectID = "lgo-gZ-5Dv"; */
+"lgo-gZ-5Dv.title" = "الحجوزات";
+
+/* Class = "UITabBarItem"; title = "Requests"; ObjectID = "lwB-KQ-ZWJ"; */
+"lwB-KQ-ZWJ.title" = "الحجوزات";

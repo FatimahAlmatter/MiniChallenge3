@@ -49,6 +49,8 @@ class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollec
         
         if vc.organizerInfo[indexPath.row].isIncludePackage == true {
             cell3.includePackageTag.isHidden = false
+            cell3.includePackageTag.text = "include Package".localized
+
         } else {
             cell3.includePackageTag.isHidden = true
         }

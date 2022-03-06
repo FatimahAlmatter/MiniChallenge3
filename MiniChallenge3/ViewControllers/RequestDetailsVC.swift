@@ -12,17 +12,28 @@ class RequestDetailsVC: UIViewController {
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var menu: UITextField!
     @IBOutlet weak var labeln: UILabel!
-    
-    
-    
+    @IBOutlet weak var noOfGusstsLbl: UILabel!
+    @IBOutlet weak var partyTypeLbl: UILabel!
+    @IBOutlet weak var notesLbl: UILabel!
+    @IBOutlet weak var confirmBtn: UIButton!
     @IBOutlet weak var note: UITextView!
-    let menu1 = ["wedding", "birthday", "Graduation", "Anniversary", "bridal-shower", "engagement", "Baby-shower", "Retirement"]
+    
+    let menu1 = ["Wedding".localized, "Birthday".localized, "Graduation".localized, "Anniversary".localized, "bridal-shower".localized, "engagement".localized, "Baby-shower".localized, "Retirement".localized]
     
     var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "New Request"
+        title = "New Request".localized
+        
+        noOfGusstsLbl.text = "numberOfGuests".localized
+        partyTypeLbl.text = "Party type".localized
+        notesLbl.text = "notes".localized
+        confirmBtn.titleLabel?.text = "confirm".localized
+
+        
+        
+        note.layer.cornerRadius = 12
         
         pickerView.delegate = self
         pickerView.dataSource = self
@@ -33,9 +44,9 @@ class RequestDetailsVC: UIViewController {
     }
     
     @IBAction func confirmreq(_ sender: Any) {
-        let alert = UIAlertController(title: "Pending...", message: "Your request is pending now, you will be notified once the organizer accept it", preferredStyle:.alert)
+        let alert = UIAlertController(title: "Pending".localized, message: "Your request is pending now, you will be notified once the organizer accept it".localized, preferredStyle:.alert)
        //alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { UIAlertAction in
+        alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: { UIAlertAction in
             self.performSegue(withIdentifier: "notificationScreen", sender: self)
             
 

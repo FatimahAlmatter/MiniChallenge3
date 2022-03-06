@@ -1,0 +1,24 @@
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "3KU-Wl-YMF"; */
+"3KU-Wl-YMF.title" = "الملف الشخصي";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "86e-Qb-iac"; */
+"86e-Qb-iac.title" = "الملف الشخصي";
+
+/* Class = "UISegmentedControl"; 9LN-yx-z3b.segmentTitles[0] = "EN"; ObjectID = "9LN-yx-z3b"; */
+"9LN-yx-z3b.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; 9LN-yx-z3b.segmentTitles[1] = "AR"; ObjectID = "9LN-yx-z3b"; */
+"9LN-yx-z3b.segmentTitles[1]" = "AR";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Kvq-zw-P1B"; */
+"Kvq-zw-P1B.text" = "اللغة";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "MIa-PF-frK"; */
+"MIa-PF-frK.title" = "تسجيل الخروج";
+
+/* Class = "UILabel"; text = "Payment Methods"; ObjectID = "prd-U7-mzT"; */
+"prd-U7-mzT.text" = "طرق الدفع";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "suY-Dz-4XF"; */
+"suY-Dz-4XF.text" = "الرسائل";

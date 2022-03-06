@@ -14,7 +14,7 @@ class NotificationsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Notifications"
+        title = "Notifications".localized
         
         collection.delegate = self
         collection.dataSource = self
@@ -31,9 +31,11 @@ extension NotificationsVC : UICollectionViewDelegate , UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "paymentCell", for: indexPath) as! NotificationCell
         cell.layer.cornerRadius = 12
-        cell.organizerName.text = "Organizer name: \(model.requests[indexPath.row].organizerName)"
-        cell.partyDate.text = "Party date: \(model.requests[indexPath.row].partyDate)"
-        cell.partyType.text = "Party type: \(model.requests[indexPath.row].partyType)"
+        cell.statusLabel.text = "status".localized
+        cell.organizerName.text = "Organizer name".localized + ":\(model.requests[indexPath.row].organizerName)"
+        cell.partyDate.text = "Party date".localized + ":\(model.requests[indexPath.row].partyDate)"
+        cell.partyType.text = "Party type".localized + ":\(model.requests[indexPath.row].partyType)"
+        cell.patBtn.titleLabel?.text = "pay".localized
         return cell
     }
     
