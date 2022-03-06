@@ -84,8 +84,5 @@ extension RequestDetailsVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         menu.text = menu1[row]
         menu.resignFirstResponder()
-        
     }
-    
-    
 }

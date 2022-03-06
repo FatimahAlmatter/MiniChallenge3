@@ -18,10 +18,6 @@ class ServicesVC: UIViewController {
     @IBOutlet weak var serviceLbl: UILabel!
     @IBOutlet weak var packLbl: UILabel!
     
-    
-    
-    
-
     let search = UISearchController()
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
