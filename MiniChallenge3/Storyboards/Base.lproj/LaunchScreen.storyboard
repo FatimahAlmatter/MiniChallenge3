@@ -15,24 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8S-L8-0FW">
-                                <rect key="frame" x="146.33333333333334" y="400.66666666666669" width="97.333333333333343" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vIf-yd-s3G">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2d5-Bn-bgw"/>
+                                    <constraint firstAttribute="height" constant="128" id="xui-B8-NwJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="z8S-L8-0FW" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Wm1-6z-RDp"/>
-                            <constraint firstItem="z8S-L8-0FW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tuj-vw-qpz"/>
+                            <constraint firstItem="vIf-yd-s3G" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1hx-Im-nk8"/>
+                            <constraint firstItem="vIf-yd-s3G" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="r1R-9s-gxf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="1072" height="250"/>
+    </resources>
 </document>

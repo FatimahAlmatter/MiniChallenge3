@@ -25,13 +25,13 @@
 		3213E8F127C3BFAC00270EAD /* ServiceProvidersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8F027C3BFAC00270EAD /* ServiceProvidersVC.swift */; };
 		3213E8F327C3C00A00270EAD /* RequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8F227C3C00A00270EAD /* RequestsVC.swift */; };
 		3213E8F527C3C02500270EAD /* RequestDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8F427C3C02500270EAD /* RequestDetailsVC.swift */; };
-		3213E8F727C3C03700270EAD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8F627C3C03700270EAD /* ProfileVC.swift */; };
 		3213E8F927C3C06D00270EAD /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213E8F827C3C06D00270EAD /* SavedVC.swift */; };
 		3213E8FB27C3C1B900270EAD /* Services.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E8FA27C3C1B900270EAD /* Services.storyboard */; };
 		3213E8FE27C3C23F00270EAD /* Requests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E8FC27C3C23F00270EAD /* Requests.storyboard */; };
 		3213E90027C3C30A00270EAD /* Saved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E8FF27C3C30A00270EAD /* Saved.storyboard */; };
 		3213E90327C3C33F00270EAD /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213E90127C3C33F00270EAD /* Profile.storyboard */; };
 		323C46F127C4109900570619 /* AdsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C46F027C4109900570619 /* AdsCollectionViewCell.swift */; };
+		323DF6B827D4E8750023DB01 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323DF6B727D4E8750023DB01 /* ProfileTableVC.swift */; };
 		32D4868C27D3F41B00E44092 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D4868E27D3F41B00E44092 /* Localizable.strings */; };
 		32E5A8E927C62922006D9CE8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E5A8E827C62922006D9CE8 /* View.xib */; };
 		32E957D327C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E957D227C56D1D00DD4CD6 /* ServicesCollectionViewCell.swift */; };
@@ -66,13 +66,13 @@
 		3213E8F027C3BFAC00270EAD /* ServiceProvidersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvidersVC.swift; sourceTree = "<group>"; };
 		3213E8F227C3C00A00270EAD /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
 		3213E8F427C3C02500270EAD /* RequestDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDetailsVC.swift; sourceTree = "<group>"; };
-		3213E8F627C3C03700270EAD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		3213E8F827C3C06D00270EAD /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		3213E8FA27C3C1B900270EAD /* Services.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Services.storyboard; sourceTree = "<group>"; };
 		3213E8FD27C3C23F00270EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiniChallenge3/Storyboards/Base.lproj/Requests.storyboard; sourceTree = "<group>"; };
 		3213E8FF27C3C30A00270EAD /* Saved.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Saved.storyboard; sourceTree = "<group>"; };
 		3213E90227C3C33F00270EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiniChallenge3/Storyboards/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		323C46F027C4109900570619 /* AdsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsCollectionViewCell.swift; sourceTree = "<group>"; };
+		323DF6B727D4E8750023DB01 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
 		32D4868627D3ECC400E44092 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		32D4868727D3ECF200E44092 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		32D4868827D3ECF200E44092 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = MiniChallenge3/Storyboards/ar.lproj/Requests.strings; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 				3213E8F227C3C00A00270EAD /* RequestsVC.swift */,
 				3213E8F027C3BFAC00270EAD /* ServiceProvidersVC.swift */,
 				3213E8F427C3C02500270EAD /* RequestDetailsVC.swift */,
-				3213E8F627C3C03700270EAD /* ProfileVC.swift */,
 				3213E8F827C3C06D00270EAD /* SavedVC.swift */,
 				32EA1BA527CAB6C200A91861 /* NotificationsVC.swift */,
+				323DF6B727D4E8750023DB01 /* ProfileTableVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 				3213E8EB27C3BF5400270EAD /* OrganizerInfoVC.swift in Sources */,
 				3213E8F527C3C02500270EAD /* RequestDetailsVC.swift in Sources */,
 				3213E8F327C3C00A00270EAD /* RequestsVC.swift in Sources */,
-				3213E8F727C3C03700270EAD /* ProfileVC.swift in Sources */,
+				323DF6B827D4E8750023DB01 /* ProfileTableVC.swift in Sources */,
 				3213E8CB27C3BDA300270EAD /* ServicesVC.swift in Sources */,
 				32EA1BA627CAB6C200A91861 /* NotificationsVC.swift in Sources */,
 				32EA1BA827CAB92B00A91861 /* NotificationCell.swift in Sources */,

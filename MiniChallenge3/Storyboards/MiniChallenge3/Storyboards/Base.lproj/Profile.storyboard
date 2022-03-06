@@ -9,7 +9,7 @@
         <!--Profile-->
         <scene sceneID="Mxq-ta-HgV">
             <objects>
-                <tableViewController id="fpB-6L-NO6" sceneMemberID="viewController">
+                <tableViewController id="fpB-6L-NO6" customClass="ProfileTableVC" customModule="MiniChallenge3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cVs-eJ-BbD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                         <sections>
                             <tableViewSection id="gCy-eW-9iP">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="HAa-eh-ZoD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="HAa-eh-ZoD">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HAa-eh-ZoD" id="cFD-Ou-00y">
@@ -69,7 +69,8 @@
                                                     </segments>
                                                     <color key="selectedSegmentTintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
-                                                        <action selector="changeLang:" destination="tDo-Zt-5Vv" eventType="valueChanged" id="vjw-1h-Tey"/>
+                                                        <action selector="changeLang:" destination="fpB-6L-NO6" eventType="valueChanged" id="KHN-wN-yyZ"/>
+                                                        <action selector="changeLangu:" destination="tDo-Zt-5Vv" eventType="valueChanged" id="e43-PY-gth"/>
                                                     </connections>
                                                 </segmentedControl>
                                             </subviews>
@@ -110,6 +111,9 @@
                             <color key="tintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmented" destination="9LN-yx-z3b" id="Rlr-OJ-5Sc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqE-oe-nsy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tDo-Zt-5Vv" userLabel="Exit" sceneMemberID="exit"/>
