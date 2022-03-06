@@ -24,7 +24,7 @@ class ServicesVC: UIViewController {
 
     let search = UISearchController()
     
-    var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2")]
+    var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
     var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Wedding"), UIImage(named: "Security")]
     var services = ["Catering".localized,"Decorations".localized,"Gifts".localized,"Technical & DJ".localized,"invitation".localized,"Wedding".localized, "Security".localized]
     
