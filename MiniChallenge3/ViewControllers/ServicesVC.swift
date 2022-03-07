@@ -57,7 +57,7 @@ class ServicesVC: UIViewController, CALayerDelegate {
         
         filtersBtnsCollection.delegate = self
         filtersBtnsCollection.dataSource = self
-
+        
         
         
         let layout = UICollectionViewFlowLayout()
@@ -75,17 +75,17 @@ class ServicesVC: UIViewController, CALayerDelegate {
             let VC = segue.destination as? ServiceProvidersVC
             VC?.title = "Catering".localized
             VC?.navigationItem.largeTitleDisplayMode = .never
-
-
+            
+            
             
         } else if segue.identifier == "goToOrganizerScreen" {
             let VC = segue.destination as? OrganizerInfoVC
             VC?.title = "Organizer Info".localized
             VC?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bubble.right.fill"), style: .plain, target: nil, action: nil)
-
-
+            
+            
             VC?.navigationItem.largeTitleDisplayMode = .never
-
+            
         }
     }
     
@@ -93,7 +93,7 @@ class ServicesVC: UIViewController, CALayerDelegate {
         performSegue(withIdentifier: "notificationScreen", sender: nil)
         
     }
-
+    
     
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
@@ -166,37 +166,40 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             if organizer.organizerInfo[indexPath.row].isIncludePackage == true {
                 cell3.includePackageTag.isHidden = false
                 cell3.includePackageTag.text = "include Package".localized
-
+                
             } else {
                 cell3.includePackageTag.isHidden = true
             }
-
+            
             
             return cell3
             
         } else {
             let cell4 = collectionView.dequeueReusableCell(withReuseIdentifier: "catagoiesCell", for: indexPath) as! ButtonsFilterCollectionViewCell
-
+            
             cell4.filterBtn.setTitle(catagories[indexPath.row], for: .normal)
             cell4.filterBtn.translatesAutoresizingMaskIntoConstraints = false
             //the following code is to change the button size depends on text lenght
             let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
             cell4.filterBtn.frame.size = desiredButtonSize
             
-
+            
             
             if indexPath.row == 0 {
-                cell4.filterBtn.backgroundColor = UIColor(red: 110, green: 89, blue: 182, alpha: 1)
+                cell4.layer.cornerRadius = 23
+                cell4.contentView.backgroundColor = UIColor(named: "AppColor")
                 cell4.filterBtn.titleLabel?.textColor = .white
             } else {
-                cell4.filterBtn.backgroundColor = UIColor(red: 110, green: 89, blue: 182, alpha: 0.5)
+                cell4.layer.cornerRadius = 23
+                cell4.contentView.backgroundColor = UIColor(named: "Color1")
                 cell4.filterBtn.titleLabel?.textColor = .black
 
+                
             }
-
             
-//            cell4.filterBtn.tag = indexPath.row
-//            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
+            
+            //            cell4.filterBtn.tag = indexPath.row
+            //            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
             
             return cell4
         }
@@ -204,16 +207,16 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
         
     }
     
-//    @objc func buttonFilter(sender: UIButton){
-//        let indexpath1 = IndexPath(row: sender.tag, section: 0)
-//        if indexpath1.row == 0 {
-//            sender.backgroundColor = .purple
-//        } else {
-//            sender.backgroundColor = .red
-//
-//        }
-//
-//    }
+    //    @objc func buttonFilter(sender: UIButton){
+    //        let indexpath1 = IndexPath(row: sender.tag, section: 0)
+    //        if indexpath1.row == 0 {
+    //            sender.backgroundColor = .purple
+    //        } else {
+    //            sender.backgroundColor = .red
+    //
+    //        }
+    //
+    //    }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -233,7 +236,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     }
     
     
-   
+    
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -254,6 +257,8 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         if collectionView == self.packagesCollection {
             return 20
+        } else if collectionView == self.filtersBtnsCollection {
+            return 10
         } else {
             return 1
         }
