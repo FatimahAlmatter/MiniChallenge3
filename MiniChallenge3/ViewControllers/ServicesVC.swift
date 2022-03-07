@@ -20,10 +20,16 @@ class ServicesVC: UIViewController, CALayerDelegate {
     
     let search = UISearchController()
     
-    var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
-    var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Security")]
-    var services = ["Catering".localized,"Decorations".localized,"Gifts".localized,"Technical & DJ".localized,"invitation".localized, "Security".localized]
+    struct Service {
+        var img : String
+        var lbl : String
+    }
     
+    
+    var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
+    
+    var servicesArray = [Service(img: "Catering", lbl: "Catering".localized) , Service(img: "Decorations", lbl: "Decorations".localized), Service(img: "Gifts", lbl: "Gifts".localized) , Service(img: "Dj", lbl: "Technical & DJ".localized), Service(img: "invitation", lbl: "invitation".localized) , Service(img: "Security", lbl: "Security".localized) ]
+                             
     var catagories = ["All".localized,"Birthday".localized,"Graduation".localized,"Wedding".localized,"Anniversary".localized,"bridal-shower".localized,"engagement".localized,"Baby-shower".localized,"Retirement".localized]
     
     var timer: Timer?
@@ -142,14 +148,16 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             return cell
         } else if collectionView == self.servicesCollection {
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "ServiceCell", for: indexPath) as! ServicesCollectionViewCell
-            cell2.serviceImg.image = servicesArray[indexPath.row]
-            cell2.serviceName.text = services[indexPath.row]
+            cell2.configure(with: self.servicesArray[indexPath.row])
+            cell2.serviceImg.image = UIImage(named: servicesArray[indexPath.row].img)
+            cell2.serviceName.text = servicesArray[indexPath.row].lbl
             return cell2
             
         } else if collectionView == self.packagesCollection  {
             let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
+            cell3.configure(with: organizer.organizerInfo[indexPath.row])
             cell3.layer.cornerRadius = 12
-            cell3.storeImg.image = organizer.organizerInfo[indexPath.row].img
+            cell3.storeImg.image = UIImage(named: organizer.organizerInfo[indexPath.row].img)
             cell3.storeName.text = organizer.organizerInfo[indexPath.row].name
             cell3.storeRate.text = organizer.organizerInfo[indexPath.row].rate
             cell3.storeOverview.text = "Overview".localized + ": \(organizer.organizerInfo[indexPath.row].overView)"

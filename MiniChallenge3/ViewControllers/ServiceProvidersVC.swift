@@ -35,7 +35,8 @@ class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
         cell3.layer.cornerRadius = 12
-        cell3.storeImg.image = vc.organizerInfo[indexPath.row].img
+        cell3.configure(with: vc.organizerInfo[indexPath.row])
+        cell3.storeImg.image = UIImage(named: vc.organizerInfo[indexPath.row].img)
         cell3.storeName.text = vc.organizerInfo[indexPath.row].name
         cell3.storeRate.text = vc.organizerInfo[indexPath.row].rate
         cell3.storeOverview.text = vc.organizerInfo[indexPath.row].overView
