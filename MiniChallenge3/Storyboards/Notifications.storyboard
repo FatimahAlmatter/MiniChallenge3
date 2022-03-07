@@ -40,7 +40,7 @@
                                                         <constraint firstAttribute="width" constant="101" id="sAD-uc-toC"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Pay Now" cornerStyle="capsule">
+                                                    <buttonConfiguration key="configuration" style="filled" title="Pay Now" cornerStyle="large">
                                                         <color key="baseBackgroundColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </buttonConfiguration>
                                                 </button>

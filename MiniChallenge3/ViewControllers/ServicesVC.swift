@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ServicesVC: UIViewController {
+class ServicesVC: UIViewController, CALayerDelegate {
     var organizer = OrganizersModel()
     
     @IBOutlet weak var adsCollection: UICollectionView!
@@ -21,8 +21,8 @@ class ServicesVC: UIViewController {
     let search = UISearchController()
     
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
-    var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Wedding"), UIImage(named: "Security")]
-    var services = ["Catering".localized,"Decorations".localized,"Gifts".localized,"Technical & DJ".localized,"invitation".localized,"Wedding".localized, "Security".localized]
+    var servicesArray = [UIImage(named: "Catering") , UIImage(named: "Decorations"), UIImage(named: "Gifts") , UIImage(named: "Dj"), UIImage(named: "invitation") , UIImage(named: "Security")]
+    var services = ["Catering".localized,"Decorations".localized,"Gifts".localized,"Technical & DJ".localized,"invitation".localized, "Security".localized]
     
     var catagories = ["All".localized,"Birthday".localized,"Graduation".localized,"Wedding".localized,"Anniversary".localized,"bridal-shower".localized,"engagement".localized,"Baby-shower".localized,"Retirement".localized]
     
@@ -81,6 +81,9 @@ class ServicesVC: UIViewController {
         } else if segue.identifier == "goToOrganizerScreen" {
             let VC = segue.destination as? OrganizerInfoVC
             VC?.title = "Organizer Info".localized
+            VC?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bubble.right.fill"), style: .plain, target: nil, action: nil)
+
+
             VC?.navigationItem.largeTitleDisplayMode = .never
 
         }
@@ -173,11 +176,25 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             
         } else {
             let cell4 = collectionView.dequeueReusableCell(withReuseIdentifier: "catagoiesCell", for: indexPath) as! ButtonsFilterCollectionViewCell
+
             cell4.filterBtn.setTitle(catagories[indexPath.row], for: .normal)
             cell4.filterBtn.translatesAutoresizingMaskIntoConstraints = false
             //the following code is to change the button size depends on text lenght
             let desiredButtonSize = CGSize(width: cell4.filterBtn.intrinsicContentSize.width, height: collectionView.frame.height)
             cell4.filterBtn.frame.size = desiredButtonSize
+            
+
+            
+            if indexPath.row == 0 {
+                cell4.filterBtn.backgroundColor = UIColor(red: 110, green: 89, blue: 182, alpha: 1)
+                cell4.filterBtn.titleLabel?.textColor = .white
+            } else {
+                cell4.filterBtn.backgroundColor = UIColor(red: 110, green: 89, blue: 182, alpha: 0.5)
+                cell4.filterBtn.titleLabel?.textColor = .black
+
+            }
+
+            
 //            cell4.filterBtn.tag = indexPath.row
 //            cell4.filterBtn.addTarget(self, action: #selector(buttonFilter), for: .touchUpInside)
             
@@ -189,7 +206,12 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     
 //    @objc func buttonFilter(sender: UIButton){
 //        let indexpath1 = IndexPath(row: sender.tag, section: 0)
-//        sender.backgroundColor = .red
+//        if indexpath1.row == 0 {
+//            sender.backgroundColor = .purple
+//        } else {
+//            sender.backgroundColor = .red
+//
+//        }
 //
 //    }
     

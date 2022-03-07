@@ -56,7 +56,7 @@
                                                 </constraints>
                                                 <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="continue" enablesReturnKeyAutomatically="YES"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFt-zB-ItY">
                                                 <rect key="frame" x="20" y="443" width="78" height="21"/>
@@ -90,8 +90,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-05-gaO">
-                                                <rect key="frame" x="237" y="397" width="10.333333333333314" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNh-05-gaO">
+                                                <rect key="frame" x="237" y="397" width="10.333333333333343" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -119,7 +119,7 @@
                                             <constraint firstItem="5TT-qe-NBa" firstAttribute="top" secondItem="VKg-fs-Rbc" secondAttribute="bottom" constant="52.329999999999998" id="cBt-ER-7AW"/>
                                             <constraint firstItem="fwX-69-G7F" firstAttribute="leading" secondItem="G6G-4k-8H7" secondAttribute="leading" constant="20" id="h8n-kE-Z5D"/>
                                             <constraint firstItem="Ud2-jM-gFa" firstAttribute="top" secondItem="G6G-4k-8H7" secondAttribute="top" constant="20" id="lyZ-UU-m5y"/>
-                                            <constraint firstItem="ipL-PD-5ky" firstAttribute="leading" secondItem="MNh-05-gaO" secondAttribute="trailing" constant="5" id="oBg-8f-Xpx"/>
+                                            <constraint firstItem="ipL-PD-5ky" firstAttribute="leading" secondItem="MNh-05-gaO" secondAttribute="trailing" constant="28.699999999999999" id="oBg-8f-Xpx"/>
                                             <constraint firstItem="Ud2-jM-gFa" firstAttribute="leading" secondItem="G6G-4k-8H7" secondAttribute="leading" constant="20" id="qMU-nD-sdN"/>
                                             <constraint firstItem="wFt-zB-ItY" firstAttribute="top" secondItem="fwX-69-G7F" secondAttribute="bottom" constant="25" id="tcg-VV-5rR"/>
                                             <constraint firstAttribute="trailing" secondItem="VKg-fs-Rbc" secondAttribute="trailing" constant="36" id="xvu-K0-HVF"/>
