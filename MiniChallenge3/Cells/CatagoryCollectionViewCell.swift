@@ -10,4 +10,7 @@ import UIKit
 class CatagoryCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var catagory: UIImageView!
+    
+
+
 }

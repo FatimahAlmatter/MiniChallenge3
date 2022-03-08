@@ -24,7 +24,7 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     var organiazer = OrganizersModel()
     //
     var arrayCatalog = [UIImage(named: "1"), UIImage(named: "22"), UIImage(named: "33"), UIImage(named: "444"), UIImage(named: "5555")]
-    var arrayPackage = [UIImage(named: "p3"), UIImage(named: "p2"), UIImage(named: "p1")]
+    var arrayPackage = ["Wedding  Package",  "Graduation Package", "Birthday  Package"]
 
     
     override func viewDidLoad() {
@@ -77,6 +77,9 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
             return cell
         } else if collectionView == self.feedback {
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as! feedbackCollectionViewCell
+            
+            cell2.feedbackaccessbility(with: organiazer.coustemrfeedback[indexPath.row])
+
             cell2.layer.cornerRadius = 20
             cell2.comments.text = organiazer.coustemrfeedback[indexPath.row].review
             cell2.date.text = organiazer.coustemrfeedback[indexPath.row].date
@@ -85,8 +88,10 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
             return cell2
         } else {
             let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath)  as! orgpackingCollectionViewCell
+            cell3.orgaccessbility(with: self.arrayPackage[indexPath.row])
             cell3.layer.cornerRadius = 20
-            cell3.imgPackage.image = arrayPackage[indexPath.row]
+            cell3.imgPackage.image = UIImage(named: arrayPackage[indexPath.row])
+            
             return cell3
             
         }
