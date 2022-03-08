@@ -13,7 +13,8 @@ class SavedVC: UIViewController {
     @IBOutlet weak var savedCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Saved Items".localized
+        title = "Saved".localized
+       // tabBarItem.title = "Saved".localized
         
         savedCollectionView.delegate = self
         savedCollectionView.dataSource = self
@@ -34,7 +35,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "packageCell", for: indexPath) as! PackageCollectionViewCell
         cell3.layer.cornerRadius = 12
-        cell3.storeImg.image = organizer.filterData[indexPath.row].img
+        cell3.storeImg.image = UIImage(named: organizer.filterData[indexPath.row].img)
         cell3.storeName.text = organizer.filterData[indexPath.row].name
         cell3.storeRate.text = organizer.filterData[indexPath.row].rate
         cell3.storeOverview.text = "Overview".localized + "\(organizer.filterData[indexPath.row].overView)"

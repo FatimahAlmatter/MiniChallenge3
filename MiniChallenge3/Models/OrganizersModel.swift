@@ -11,7 +11,7 @@ import UIKit
 class OrganizersModel {
     
     struct Organizer {
-        var img : UIImage?
+        var img : String
         var name : String
         var rate : String
         var overView : String
@@ -41,10 +41,10 @@ class OrganizersModel {
     ]
     
     var organizerInfo : [Organizer] = [
-        Organizer(img: UIImage(named: "store1"), name: "GHADEER ASHOOR".localized, rate: "4.2", overView: "Modern Events & Wedding Designer".localized, isSaved: true, isIncludePackage: true),
-        Organizer(img: UIImage(named: "store2"), name: "Party in Box".localized, rate: "3.7", overView: "organizing parties for more than 10 years".localized, isSaved: false, isIncludePackage: false),
-        Organizer(img: UIImage(named: "store3"), name: "Glowing Party".localized, rate: "4.0", overView: "organizing parties and offer packages with good prices".localized, isSaved: true, isIncludePackage: true),
-        Organizer(img: UIImage(named: "store4"), name: "Luxury event".localized, rate: "4.3", overView: "offer packages with good prices".localized, isSaved: true, isIncludePackage: true)
+        Organizer(img: "store1", name: "Ghadeer Ashoor".localized, rate: "4.2", overView: "Modern Events & Wedding Designer".localized, isSaved: true, isIncludePackage: true),
+        Organizer(img: "store2", name: "Party in Box".localized, rate: "3.7", overView: "organizing parties for more than 10 years".localized, isSaved: false, isIncludePackage: false),
+        Organizer(img: "store3", name: "Glowing Party".localized, rate: "4.0", overView: "organizing parties and offer packages with good prices".localized, isSaved: true, isIncludePackage: true),
+        Organizer(img: "store4", name: "Luxury event".localized, rate: "4.3", overView: "offer packages with good prices".localized, isSaved: true, isIncludePackage: true)
     ]
     
     var orderInThepast : [Request] = [Request(organizerName: "Glowing Party".localized, partyDate: "02/03/2019", partyType: "Birthday".localized), Request(organizerName: "Party in Box".localized, partyDate: "02/08/2021", partyType: "Wedding".localized)]

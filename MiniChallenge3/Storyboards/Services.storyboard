@@ -77,7 +77,7 @@
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-Vj-WLf">
                                                 <rect key="frame" x="0.0" y="257" width="390" height="191"/>
-                                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="191" id="UxJ-Ld-cZM"/>
                                                 </constraints>
@@ -160,31 +160,31 @@
                                                 </cells>
                                             </collectionView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hVF-Eg-irt">
-                                                <rect key="frame" x="2" y="496" width="388" height="46"/>
+                                                <rect key="frame" x="8" y="496" width="382" height="46"/>
                                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="48x-dH-jQ3"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="yw9-KS-bO0">
-                                                    <size key="itemSize" width="80" height="42"/>
+                                                    <size key="itemSize" width="51" height="28"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="catagoiesCell" id="5L2-rs-3IM" customClass="ButtonsFilterCollectionViewCell" customModule="MiniChallenge3" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="2" width="80" height="42"/>
+                                                        <rect key="frame" x="0.0" y="9" width="51" height="28"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SCm-5X-pN8">
-                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="42"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="28"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tne-q0-xRA">
-                                                                    <rect key="frame" x="5" y="5.6666666666666679" width="70" height="31.000000000000004"/>
+                                                                    <rect key="frame" x="5" y="-1.6666666666666661" width="41" height="31.333333333333329"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="filled" title="All" cornerStyle="capsule">
                                                                         <color key="baseForegroundColor" systemColor="labelColor"/>
-                                                                        <color key="baseBackgroundColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                        <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </buttonConfiguration>
                                                                 </button>
                                                             </subviews>
@@ -194,7 +194,7 @@
                                                                 <constraint firstItem="tne-q0-xRA" firstAttribute="leading" secondItem="SCm-5X-pN8" secondAttribute="leading" constant="5" id="qeY-7w-v9x"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
-                                                        <size key="customSize" width="80" height="42"/>
+                                                        <size key="customSize" width="51" height="28"/>
                                                         <connections>
                                                             <outlet property="filterBtn" destination="tne-q0-xRA" id="UZh-1X-lIa"/>
                                                         </connections>
@@ -235,7 +235,7 @@
                                             <constraint firstItem="Afk-4M-5iU" firstAttribute="leading" secondItem="ho9-J1-auR" secondAttribute="leading" id="QEs-wU-R9l"/>
                                             <constraint firstAttribute="trailing" secondItem="cfe-Vj-WLf" secondAttribute="trailing" id="Ud4-gv-hLH"/>
                                             <constraint firstItem="sMT-DW-6X8" firstAttribute="top" secondItem="Afk-4M-5iU" secondAttribute="bottom" constant="12" id="VZV-VK-Ea5"/>
-                                            <constraint firstItem="hVF-Eg-irt" firstAttribute="leading" secondItem="ho9-J1-auR" secondAttribute="leading" constant="2" id="WeK-Kl-gXR"/>
+                                            <constraint firstItem="hVF-Eg-irt" firstAttribute="leading" secondItem="ho9-J1-auR" secondAttribute="leading" constant="8" id="WeK-Kl-gXR"/>
                                             <constraint firstItem="hVF-Eg-irt" firstAttribute="top" secondItem="sMT-DW-6X8" secondAttribute="bottom" constant="10" id="Zcz-tu-yhq"/>
                                             <constraint firstAttribute="height" constant="1400" id="bT6-wa-XBI"/>
                                             <constraint firstAttribute="bottom" secondItem="0Dv-ch-ecf" secondAttribute="bottom" id="f92-zH-44g"/>
@@ -294,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnX-ad-y57" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792" y="80"/>
+            <point key="canvasLocation" x="1790.7692307692307" y="79.620853080568722"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="Cud-mu-zqd">

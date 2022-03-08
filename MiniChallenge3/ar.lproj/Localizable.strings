@@ -73,7 +73,7 @@
 "numberOfGuests" = "عدد الضيوف";
 
 //Saved
-"Saved Items" = "المحفوظات";
+"Saved" = "المحفوظات";
 
 //Notifications
 "Notifications" = "التنبيهات";
@@ -83,3 +83,9 @@
 "status" = "تم قبول طلبك";
 "pay" = "ادفع الآن";
 
+
+
+//Tabbar
+"Saved" = "المحفوظات";
+"Requests" = "الحجوزات";
+"Profile" = "الملف الشخصي";

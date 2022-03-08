@@ -16,9 +16,7 @@ import UIKit
 
 
 class PackageCollectionViewCell: UICollectionViewCell {
-    
-    var organizer = OrganizersModel()
-    
+        
     @IBOutlet weak var storeImg: UIImageView!
     @IBOutlet weak var storeName: UILabel!
     @IBOutlet weak var storeRate: UILabel!
@@ -42,7 +40,23 @@ class PackageCollectionViewCell: UICollectionViewCell {
                 print("after: \(sender.tag)")
 
             }
-
-
     }
+    
+    func configure(with item : OrganizersModel.Organizer){
+        self.storeName.text = item.name
+        self.storeRate.text = item.rate
+        self.storeOverview.text = item.overView
+        
+        self.storeName.isAccessibilityElement = false
+        self.storeRate.isAccessibilityElement = false
+        self.storeOverview.isAccessibilityElement = false
+        
+        isAccessibilityElement = true
+
+        accessibilityLabel = "orgnizer name is \(item.name) organizer rate is \(item.rate) and organizer overview \(item.overView)"
+        accessibilityHint = "Click to view more about organizer"
+        
+        
+    }
+    
 }
