@@ -41,6 +41,7 @@ class ServicesVC: UIViewController, CALayerDelegate {
         
         serviceLbl.text = "Services".localized
         packLbl.text = "Packages".localized
+        tabBarItem.title = "Services".localized
         
         //  search.searchResultsUpdater = self
         navigationItem.searchController = search

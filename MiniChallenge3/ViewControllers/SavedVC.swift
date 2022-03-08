@@ -13,7 +13,8 @@ class SavedVC: UIViewController {
     @IBOutlet weak var savedCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Saved Items".localized
+        title = "Saved".localized
+       // tabBarItem.title = "Saved".localized
         
         savedCollectionView.delegate = self
         savedCollectionView.dataSource = self
