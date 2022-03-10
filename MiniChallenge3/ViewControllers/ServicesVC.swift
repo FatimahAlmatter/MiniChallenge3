@@ -29,15 +29,27 @@ class ServicesVC: UIViewController, CALayerDelegate {
     var adsArray = [UIImage(named: "ad3") , UIImage(named: "ad1"), UIImage(named: "ad2"), UIImage(named: "ad4"), UIImage(named: "ad5")]
     
     var servicesArray = [Service(img: "Catering", lbl: "Catering".localized) , Service(img: "Decorations", lbl: "Decorations".localized), Service(img: "Gifts", lbl: "Gifts".localized) , Service(img: "Dj", lbl: "Technical & DJ".localized), Service(img: "invitation", lbl: "invitation".localized) , Service(img: "Security", lbl: "Security".localized) ]
-                             
+    
     var catagories = ["All".localized,"Birthday".localized,"Graduation".localized,"Wedding".localized,"Anniversary".localized,"bridal-shower".localized,"engagement".localized,"Baby-shower".localized,"Retirement".localized]
     
     var timer: Timer?
     var currentIndex = 0
-    
+    let currentLang = Locale.current.languageCode
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if currentLang == "en" {
+            servicesCollection.semanticContentAttribute = .forceLeftToRight
+            filtersBtnsCollection.semanticContentAttribute = .forceLeftToRight
+        } else {
+            servicesCollection.semanticContentAttribute = .forceRightToLeft
+            filtersBtnsCollection.semanticContentAttribute = .forceRightToLeft
+
+            
+            
+        }
         
         serviceLbl.text = "Services".localized
         packLbl.text = "Packages".localized
@@ -89,8 +101,6 @@ class ServicesVC: UIViewController, CALayerDelegate {
             let VC = segue.destination as? OrganizerInfoVC
             VC?.title = "Organizer Info".localized
             VC?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "bubble.right.fill"), style: .plain, target: nil, action: nil)
-            
-            
             VC?.navigationItem.largeTitleDisplayMode = .never
             
         }
@@ -202,7 +212,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
                 cell4.layer.cornerRadius = 23
                 cell4.contentView.backgroundColor = UIColor(named: "Color1")
                 cell4.filterBtn.titleLabel?.textColor = .black
-
+                
                 
             }
             
@@ -269,7 +279,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
         } else if collectionView == self.filtersBtnsCollection {
             return 10
         } else {
-            return 1
+            return 6
         }
     }
     
