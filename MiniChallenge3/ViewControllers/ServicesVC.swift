@@ -138,7 +138,7 @@ class ServicesVC: UIViewController, CALayerDelegate {
     
 }
 
-extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout{
+extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout  {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.adsCollection {
             return adsArray.count
@@ -195,7 +195,6 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             
         } else {
             let cell4 = collectionView.dequeueReusableCell(withReuseIdentifier: "catagoiesCell", for: indexPath) as! ButtonsFilterCollectionViewCell
-            
             cell4.filterBtn.setTitle(catagories[indexPath.row], for: .normal)
             cell4.filterBtn.translatesAutoresizingMaskIntoConstraints = false
             //the following code is to change the button size depends on text lenght
@@ -285,3 +284,5 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
     
     
 }
+
+

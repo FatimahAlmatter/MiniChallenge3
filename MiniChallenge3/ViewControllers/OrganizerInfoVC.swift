@@ -24,7 +24,7 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     var organiazer = OrganizersModel()
     //
     var arrayCatalog = [UIImage(named: "1"), UIImage(named: "22"), UIImage(named: "33"), UIImage(named: "444"), UIImage(named: "5555")]
-    var arrayPackage = ["Wedding  Package",  "Graduation Package", "Birthday  Package"]
+    var arrayPackage = [ "Birthday  Package", "Graduation Package", "Wedding  Package"]
 
     
     override func viewDidLoad() {
@@ -49,6 +49,11 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
 
         
     }
+    
+    @IBAction func requestBtnPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "request", sender: self)
+    }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
