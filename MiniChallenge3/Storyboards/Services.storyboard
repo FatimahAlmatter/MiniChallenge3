@@ -292,6 +292,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="adsCollection" destination="16e-np-XdI" id="RmA-eh-jt9"/>
+                        <outlet property="bellIcon" destination="O3S-rH-XgZ" id="tWx-FP-iTg"/>
                         <outlet property="filtersBtnsCollection" destination="hVF-Eg-irt" id="ecW-fX-N1x"/>
                         <outlet property="packLbl" destination="sMT-DW-6X8" id="T5h-ed-F3e"/>
                         <outlet property="packagesCollection" destination="0Dv-ch-ecf" id="CWp-PE-pzm"/>

@@ -1,24 +1,24 @@
 
 
 //Services Screen
-"Services" = "الخدمات";
-"Packages" = "الباقات";
+"Services" = "Servizi";
+"Packages" = "Pacchi";
 
 
-"Catering" = "الضيافة" ;
-"Decorations" = "الديكورات";
-"Gifts" = "الهدايا";
-"Technical & DJ" = "الصوتيات";
-"invitation" = "الدعوات";
-"Wedding" = "زواج";
-"Security" = "الأمن و الحراسة";
+"Catering" = "Ristorazione" ;
+"Decorations" = "Decorazioni";
+"Gifts" = "i regali";
+"Technical & DJ" = "Tecnico e dj";
+"invitation" = "Inviti";
+"Wedding" = "Nozze";
+"Security" = "Sicurezza";
 
 
-"All" = "الكل";
-"Birthday" = "حفلات الميلاد";
-"Graduation" = "تخرج";
-"Anniversary" = "ذكرى";
-"bridal-shower" = "توديع عزوبيه";
+"All" = "Tutti";
+"Birthday" = "Compleanno";
+"Graduation" = "La laurea";
+"Anniversary" = "Anniversario";
+"bridal-shower" = " ";
 "engagement" = "خطوبه";
 "Baby-shower" = "كشف جنس الجنين";
 "Retirement" = "تقاعد";
@@ -90,8 +90,3 @@
 "Requests" = "الحجوزات";
 "Profile" = "الملف الشخصي";
 
-
-"Logout" = "تسجيل الخروج";
-"Language" = "اللغة";
-"Payment Method" = "طرق الدفع";
-"Messages" = "الرسائل";

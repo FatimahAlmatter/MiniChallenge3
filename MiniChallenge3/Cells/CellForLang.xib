@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LangCell" id="Kbg-4x-gTV" customClass="LanguageCell" customModule="MiniChallenge3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kbg-4x-gTV" id="WpD-tj-9uP">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vZ-Ut-Hau">
+                        <rect key="frame" x="10" y="10" width="311" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.16862745100000001" green="0.14117647059999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ldR-Qw-qUk">
+                        <rect key="frame" x="331" y="10" width="73" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="hzR-Pg-DRg"/>
+                        </constraints>
+                        <segments>
+                            <segment title="EN"/>
+                            <segment title="AR"/>
+                        </segments>
+                        <color key="selectedSegmentTintColor" red="0.43137254899999999" green="0.34901960780000002" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ldR-Qw-qUk" secondAttribute="trailing" constant="10" id="1el-a8-fAY"/>
+                    <constraint firstItem="ldR-Qw-qUk" firstAttribute="leading" secondItem="0vZ-Ut-Hau" secondAttribute="trailing" constant="10" id="DUa-CM-1CQ"/>
+                    <constraint firstItem="0vZ-Ut-Hau" firstAttribute="top" secondItem="WpD-tj-9uP" secondAttribute="top" constant="10" id="MUE-gf-zV4"/>
+                    <constraint firstAttribute="bottom" secondItem="0vZ-Ut-Hau" secondAttribute="bottom" constant="10" id="ZbW-xf-bjh"/>
+                    <constraint firstAttribute="bottom" secondItem="ldR-Qw-qUk" secondAttribute="bottom" constant="10" id="bHW-jo-iqe"/>
+                    <constraint firstItem="ldR-Qw-qUk" firstAttribute="centerY" secondItem="WpD-tj-9uP" secondAttribute="centerY" id="is2-r7-te0"/>
+                    <constraint firstItem="0vZ-Ut-Hau" firstAttribute="leading" secondItem="WpD-tj-9uP" secondAttribute="leading" constant="10" id="mlF-fW-9f1"/>
+                    <constraint firstItem="ldR-Qw-qUk" firstAttribute="top" secondItem="WpD-tj-9uP" secondAttribute="top" constant="10" id="qAe-JR-m9s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lbl" destination="0vZ-Ut-Hau" id="xI4-4c-Zv9"/>
+                <outlet property="segmented" destination="ldR-Qw-qUk" id="YRe-ka-yER"/>
+            </connections>
+            <point key="canvasLocation" x="-30.434782608695656" y="58.928571428571423"/>
+        </tableViewCell>
+    </objects>
+</document>

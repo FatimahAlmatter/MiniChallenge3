@@ -10,6 +10,7 @@ import UIKit
 class ServicesVC: UIViewController, CALayerDelegate {
     var organizer = OrganizersModel()
     
+    @IBOutlet weak var bellIcon: UIBarButtonItem!
     @IBOutlet weak var adsCollection: UICollectionView!
     @IBOutlet weak var pageControlOutlet: UIPageControl!
     @IBOutlet weak var servicesCollection: UICollectionView!
@@ -46,9 +47,6 @@ class ServicesVC: UIViewController, CALayerDelegate {
         } else {
             servicesCollection.semanticContentAttribute = .forceRightToLeft
             filtersBtnsCollection.semanticContentAttribute = .forceRightToLeft
-
-            
-            
         }
         
         serviceLbl.text = "Services".localized

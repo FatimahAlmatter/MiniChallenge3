@@ -1,0 +1,45 @@
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "3KU-Wl-YMF"; */
+"3KU-Wl-YMF.title" = "Profile";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "86e-Qb-iac"; */
+"86e-Qb-iac.title" = "Profile";
+
+/* Class = "UISegmentedControl"; 9LN-yx-z3b.segmentTitles[0] = "EN"; ObjectID = "9LN-yx-z3b"; */
+"9LN-yx-z3b.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; 9LN-yx-z3b.segmentTitles[1] = "AR"; ObjectID = "9LN-yx-z3b"; */
+"9LN-yx-z3b.segmentTitles[1]" = "AR";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "DG2-GB-T2e"; */
+"DG2-GB-T2e.text" = "Messages";
+
+/* Class = "UISegmentedControl"; DiO-Pj-Jns.segmentTitles[0] = "EN"; ObjectID = "DiO-Pj-Jns"; */
+"DiO-Pj-Jns.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; DiO-Pj-Jns.segmentTitles[1] = "AR"; ObjectID = "DiO-Pj-Jns"; */
+"DiO-Pj-Jns.segmentTitles[1]" = "AR";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Kvq-zw-P1B"; */
+"Kvq-zw-P1B.text" = "Language";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "MIa-PF-frK"; */
+"MIa-PF-frK.title" = "Logout";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "aVW-Za-Jr5"; */
+"aVW-Za-Jr5.text" = "Language";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "bUG-PW-WpR"; */
+"bUG-PW-WpR.title" = "Logout";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "lRm-Dm-kEO"; */
+"lRm-Dm-kEO.title" = "Profile";
+
+/* Class = "UILabel"; text = "Payment Methods"; ObjectID = "prd-U7-mzT"; */
+"prd-U7-mzT.text" = "Payment Methods";
+
+/* Class = "UILabel"; text = "Payment Methods"; ObjectID = "roO-4Q-O8J"; */
+"roO-4Q-O8J.text" = "Payment Methods";
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "suY-Dz-4XF"; */
+"suY-Dz-4XF.text" = "Messages";
