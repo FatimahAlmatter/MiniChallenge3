@@ -18,75 +18,74 @@
 "Birthday" = "Compleanno";
 "Graduation" = "La laurea";
 "Anniversary" = "Anniversario";
-"bridal-shower" = " ";
-"engagement" = "خطوبه";
-"Baby-shower" = "كشف جنس الجنين";
-"Retirement" = "تقاعد";
+"bridal-shower" = "addio al nubilato";
+"engagement" = "Fidanzamento";
+"Baby-shower" = "Baby doccia";
+"Retirement" = "La pensione";
 
-"Organizer Info" = "معلومات المنسق";
-"Overview" = "نظره عامه";
-"include Package" = "تتوفر باقات";
+"Organizer Info" = "informazioni sull'organizzatore";
+"Overview" = "Panoramica";
+"include Package" = "includere Pacchetto";
 
 //Model (arrays)
-"GHADEER ASHOOR" = "غدير عاشور";
-"Modern Events & Wedding Designer" = "منسق حفلات و زواجات";
-"Party in Box" = "حفله في صندوق";
-"organizing parties for more than 10 years" = "منسق حفلات من أكثر من ١٠ سنوات";
-"Glowing Party" = "الحفلة المضيئة";
-"organizing parties and offer packages with good prices" = "متخصص تنظيم حفلات ، يتم توفير باكجات بأسعار مناسبه ";
-"Luxury event" = "الحفلات الفاخرة";
-"offer packages with good prices" = "تتوفر بكجات بأسعار مناسبه";
+"GHADEER ASHOOR" = "GHADEER ASHOOR";
+"Modern Events & Wedding Designer" = "Designer moderno di matrimoni ed eventi";
+"Party in Box" = "Party in Box";
+"organizing parties for more than 10 years" = "organizza feste da più di 10 anni";
+"Glowing Party" = "Glowing Party";
+"organizing parties and offer packages with good prices" = "organizzare feste e offrire pacchetti a prezzi vantaggiosi";
+"Luxury event" = "Luxury event";
+"offer packages with good prices" = "offrire pacchetti con buoni prezzi";
 
-"Honestly, the service was more than wonderful" = "الخدمة كانت أكثر من رائعة، أشكركم على جهودكم";
-"Like pictures" = "نفس الصور بالضبببطط";
-"I don't have anything to add, the service is very good" = "كل شي كان جيد من خدمه و تعامل و اسعار";
-"Honestly, the service was great" = "الخدمه رائعه";
+"Honestly, the service was more than wonderful" = "Onestamente, il servizio è stato più che meraviglioso";
+"Like pictures" = "Come le immagini";
+"I don't have anything to add, the service is very good" = "Non ho nulla da aggiungere, il servizio è molto buono";
+"Honestly, the service was great" = "Onestamente, il servizio è stato ottimo";
 
 
 //OrgnizerInfo
-"Catalog" = "معرض الصور";
-"feedback" = "التقييمات";
-"more" = "المزيد";
+"Catalog" = "Catalogare";
+"feedback" = "risposta";
+"more" = "di più";
 
 
 //PackageDetails
-"Package Details" = "تفاصيل البكج";
-"Pending" = "مُعلق";
-"Your request is pending now, you will be notified once the organizer accept it" = "طلبك معلق الآن، سوف يتم اشعارك في حال قبول الطلب";
-"Ok" = "حسنًا";
-"chooseDate" = "اختر يوم و تاريخ المناسبة";
-"confirm" = "تأكيد الطلب";
-"price" = "السعر";
-"Include" = "يتضمن";
-"packageDes" = " ١ قوس بالون
-٢٠ فازة ورد
-١٠ طاولات
-٥٠ كرسي
-لوح دونات
-ضيافه لعدد 50 شخص
-";
+"Package Details" = "Dettagli del pacchetto";
+"Pending" = "In attesa di";
+"Your request is pending now, you will be notified once the organizer accept it" = "La tua richiesta è in sospeso ora, sarai avvisato non appena l'organizzatore l'accetterà";
+"Ok" = "Ok";
+"chooseDate" = "scegli la data e l'ora della festa";
+"confirm" = "Confermare";
+"price" = "prezzo";
+"Include" = "Includere";
+"packageDes" = " 1 palloncino ad arco
+20 rose in vaso
+10 tavoli
+50 sedie
+tavola per ciambelle
+ristorazione per 50 persone ";
 
 
 //ٍRequestDetails
-"New Request" = "طلب جديد";
-"notes" = "ملاحظات";
-"numberOfGuests" = "عدد الضيوف";
+"New Request" = "Nuova richiesta";
+"notes" = "Appunti";
+"numberOfGuests" = "numero di invitati";
 
 //Saved
-"Saved" = "المحفوظات";
+"Saved" = "Salvato";
 
 //Notifications
-"Notifications" = "التنبيهات";
-"Organizer name" = "إسم المنسق";
-"Party date" = "تاريخ المناسبه";
-"Party type" = "نوع المناسبه";
-"status" = "تم قبول طلبك";
-"pay" = "ادفع الآن";
+"Notifications" = "Notifiche";
+"Organizer name" = "Nome dell'organizzatore";
+"Party date" = "Data della festa";
+"Party type" = "Tipo di festa";
+"status" = "la tua richiesta è stata accolta";
+"pay" = "paga ora";
 
 
 
 //Tabbar
-"Saved" = "المحفوظات";
-"Requests" = "الحجوزات";
-"Profile" = "الملف الشخصي";
+"Saved" = "Salvato";
+"Requests" = "Richieste";
+"Profile" = "Profilo";
 

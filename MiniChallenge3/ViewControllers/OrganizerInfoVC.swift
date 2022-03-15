@@ -89,6 +89,8 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
             cell2.comments.text = organiazer.coustemrfeedback[indexPath.row].review
             cell2.date.text = organiazer.coustemrfeedback[indexPath.row].date
             cell2.rate.text = organiazer.coustemrfeedback[indexPath.row].rate
+            cell2.reviewLabel.text = "Review".localized
+
             
             return cell2
         } else {
