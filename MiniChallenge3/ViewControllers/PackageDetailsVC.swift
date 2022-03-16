@@ -25,10 +25,13 @@ class PackageDetailsVC: UIViewController, UICollectionViewDelegate, UICollection
 
         catalogLbl.text = "Catalog".localized
         chooseLbl.text = "chooseDate".localized
-        confirmBtn.titleLabel?.text = "confirm".localized
         priceLbl.text = "price".localized
         packIncludeLbl.text = "Include".localized
         descriptionOfPckge.text = "packageDes".localized
+        
+        let attributedTitle = NSAttributedString(string: "confirm".localized)
+        confirmBtn.setAttributedTitle(attributedTitle, for: .selected)
+        confirmBtn.setAttributedTitle(attributedTitle, for: .normal)
         
         navigationController?.navigationBar.prefersLargeTitles = false
         PckgDetails.delegate = self

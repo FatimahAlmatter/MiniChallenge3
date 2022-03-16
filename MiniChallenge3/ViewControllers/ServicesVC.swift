@@ -169,7 +169,7 @@ extension ServicesVC : UICollectionViewDataSource , UICollectionViewDelegate , U
             cell3.storeImg.image = UIImage(named: organizer.organizerInfo[indexPath.row].img)
             cell3.storeName.text = organizer.organizerInfo[indexPath.row].name
             cell3.storeRate.text = organizer.organizerInfo[indexPath.row].rate
-            cell3.storeOverview.text = "Overview".localized + ": \(organizer.organizerInfo[indexPath.row].overView)"
+            cell3.storeOverview.text = "Overview".localized + " : \(organizer.organizerInfo[indexPath.row].overView)"
             
             if organizer.organizerInfo[indexPath.row].isSaved == true {
                 cell3.SavedAction.tag = 1

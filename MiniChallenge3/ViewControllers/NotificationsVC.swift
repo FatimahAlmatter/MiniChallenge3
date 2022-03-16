@@ -35,7 +35,12 @@ extension NotificationsVC : UICollectionViewDelegate , UICollectionViewDataSourc
         cell.organizerName.text = "Organizer name".localized + ":\(model.requests[indexPath.row].organizerName)"
         cell.partyDate.text = "Party date".localized + ":\(model.requests[indexPath.row].partyDate)"
         cell.partyType.text = "Party type".localized + ":\(model.requests[indexPath.row].partyType)"
-        cell.patBtn.titleLabel?.text = "pay".localized
+        
+        
+        let attributedTitle = NSAttributedString(string: "pay".localized)
+        cell.patBtn.setAttributedTitle(attributedTitle, for: .selected)
+        cell.patBtn.setAttributedTitle(attributedTitle, for: .normal)
+        
         return cell
     }
     

@@ -38,7 +38,7 @@ extension SavedVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColl
         cell3.storeImg.image = UIImage(named: organizer.filterData[indexPath.row].img)
         cell3.storeName.text = organizer.filterData[indexPath.row].name
         cell3.storeRate.text = organizer.filterData[indexPath.row].rate
-        cell3.storeOverview.text = "Overview".localized + "\(organizer.filterData[indexPath.row].overView)"
+        cell3.storeOverview.text = "Overview".localized + ": \(organizer.filterData[indexPath.row].overView)"
         
         
         if organizer.filterData[indexPath.row].isSaved == true {

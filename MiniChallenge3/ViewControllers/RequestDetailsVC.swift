@@ -29,7 +29,12 @@ class RequestDetailsVC: UIViewController {
         noOfGusstsLbl.text = "numberOfGuests".localized
         partyTypeLbl.text = "Party type".localized
         notesLbl.text = "notes".localized
-        confirmBtn.titleLabel?.text = "confirm".localized
+        
+        
+        let attributedTitle = NSAttributedString(string: "confirm".localized)
+        confirmBtn.setAttributedTitle(attributedTitle, for: .selected)
+        confirmBtn.setAttributedTitle(attributedTitle, for: .normal)
+        
 
         
         

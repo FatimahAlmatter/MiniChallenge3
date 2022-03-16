@@ -380,6 +380,7 @@ Modern Events &amp; Wedding Designer. </string>
                         <outlet property="overviewLbl" destination="ZnW-KH-oSH" id="drJ-bK-lgq"/>
                         <outlet property="packageCollection" destination="4yh-h0-2YN" id="64Z-BA-9IB"/>
                         <outlet property="packagesLbl" destination="7tr-sD-aP4" id="1ix-Nn-NbB"/>
+                        <outlet property="request" destination="Ft7-AB-8kQ" id="I5l-a3-HVl"/>
                         <outlet property="storeLbl" destination="Cme-ES-RQy" id="emy-YZ-eji"/>
                         <segue destination="uyh-F6-f33" kind="show" identifier="requestPackage" id="mrF-FG-GyZ"/>
                         <segue destination="sWi-vJ-JSa" kind="show" identifier="request" id="PW0-h4-wFl"/>

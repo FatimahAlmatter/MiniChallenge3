@@ -20,6 +20,8 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
     @IBOutlet weak var feedbacksLbl: UILabel!
     @IBOutlet weak var moreLBL: UIButton!
     @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var request: UIButton!
+    
     
     var organiazer = OrganizersModel()
     //
@@ -36,6 +38,12 @@ class OrganizerInfoVC: UIViewController , UICollectionViewDelegate, UICollection
         feedbacksLbl.text = "feedback".localized
         moreLBL.titleLabel?.text = "more".localized
         descriptionLbl.text = "Modern Events & Wedding Designer".localized
+        
+        let attributedTitle = NSAttributedString(string: "Request".localized)
+        request.setAttributedTitle(attributedTitle, for: .selected)
+        request.setAttributedTitle(attributedTitle, for: .normal)
+
+        
         
         
         collectionview.delegate = self

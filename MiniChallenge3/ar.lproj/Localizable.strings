@@ -28,7 +28,7 @@
 "include Package" = "تتوفر باقات";
 
 //Model (arrays)
-"GHADEER ASHOOR" = "غدير عاشور";
+"Ghadeer Ashoor" = "غدير عاشور";
 "Modern Events & Wedding Designer" = "منسق حفلات و زواجات";
 "Party in Box" = "حفله في صندوق";
 "organizing parties for more than 10 years" = "منسق حفلات من أكثر من ١٠ سنوات";
@@ -73,6 +73,8 @@
 "New Request" = "طلب جديد";
 "notes" = "ملاحظات";
 "numberOfGuests" = "عدد الضيوف";
+"Request" = "طلب خدمه";
+
 
 //Saved
 "Saved" = "المحفوظات";

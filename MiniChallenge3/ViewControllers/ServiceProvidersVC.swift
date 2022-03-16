@@ -39,7 +39,7 @@ class ServiceProvidersVC: UIViewController , UICollectionViewDelegate , UICollec
         cell3.storeImg.image = UIImage(named: vc.organizerInfo[indexPath.row].img)
         cell3.storeName.text = vc.organizerInfo[indexPath.row].name
         cell3.storeRate.text = vc.organizerInfo[indexPath.row].rate
-        cell3.storeOverview.text = vc.organizerInfo[indexPath.row].overView
+        cell3.storeOverview.text = "Overview".localized + ": \(vc.organizerInfo[indexPath.row].overView) "
         
         if vc.organizerInfo[indexPath.row].isSaved == true {
             cell3.SavedAction.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
